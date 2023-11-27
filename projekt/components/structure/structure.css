@@ -1,0 +1,66 @@
+:root {
+
+   --gray: rgb(217,217,217);
+   --spacebetween: 20px;
+}
+
+* {
+    margin:0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+    background-color: var(--gray);
+}
+
+main {
+    display: flex;
+    justify-content: start;
+}
+
+
+#filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#filters div {
+    background-color: var(--gray);
+    height: 10vw;
+    width: 25vw;
+    margin: var(--spacebetween);
+}
+
+#country {
+    grid-row: 1;
+}
+
+#type {
+    grid-row:2;
+
+}
+
+#price {
+    grid-row: 3;
+}
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+    height: 17vw;
+}
+
+footer > div {
+    padding: 10px;
+    max-height: 30%;
+    width: 30vw;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 3px solid black;
+}

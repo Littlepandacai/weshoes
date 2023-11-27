@@ -1,2 +1,6 @@
-let parent = document.body;
-renderButton(parent);
+
+
+
+
+let parent = document.querySelector("body");
+renderStructure (parent);
