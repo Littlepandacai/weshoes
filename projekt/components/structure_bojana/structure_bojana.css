@@ -1,0 +1,21 @@
+
+main
+{
+  margin-top: var(--gaap);
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: var(--gaap);
+}
+
+#right
+{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gaap);
+}
+
+#right_top
+{
+  display: flex;
+  gap: var(--gaap);
+}
