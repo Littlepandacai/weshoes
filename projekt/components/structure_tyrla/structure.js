@@ -7,13 +7,13 @@ function render_structure ()
   <main> 
       <div id="left"></div>
       <div id="right"></div> 
-      <footer></footer> 
   </main>
+  <footer></footer> 
   `
   ;
 
   return {
-    top: container.querySelector("top"),
+    top: container.querySelector("#top"),
     header: container.querySelector("header"),
     left: container.querySelector("#left"),
     right: container.querySelector("#right"),
