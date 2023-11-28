@@ -1,6 +1,6 @@
 "use strict";
 
-function render_structure(parent) {
+function structure_rebecka(parent) {
     parent.innerHTML = ` 
     <header></header>
     <div id="title">
