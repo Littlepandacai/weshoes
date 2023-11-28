@@ -28,3 +28,5 @@ function render_structure(parent) {
         right_bottom: container.querySelector("#right_bottom"),
     };
 }
+
+
