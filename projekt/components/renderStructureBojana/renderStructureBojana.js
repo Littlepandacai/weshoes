@@ -45,4 +45,4 @@ function render_structure() {
     };
 }
 
-//render_structure();
+render_structure();
