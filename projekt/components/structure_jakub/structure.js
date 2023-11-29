@@ -7,7 +7,7 @@ function renderStructure() {
         </main>
         `
         ;
-
+    //kommentar
     return {
         header: container.querySelector("header"),
         nav: container.querySelector("nav"),
