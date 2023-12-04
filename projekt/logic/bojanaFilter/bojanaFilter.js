@@ -27,9 +27,8 @@ const SHOES = [
 
 "use strict";
 
-// Skapa en tom array för att lagra filtrerade skor
-function filterBojana(unfilteredShoeArray, x, y) {
 
+function filterBojana(unfilteredShoeArray, x, y) {
 
     // Loopa igenom varje sko i den ofiltrerade arrayen
     let filterPriceArray = [];
