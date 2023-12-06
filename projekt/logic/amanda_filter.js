@@ -1,12 +1,13 @@
 "use strict";
 
-function lucia_filter (array, minPrice, maxPrice) {
+function amanda_filter (array, x, y) {
     let filteredArray = [];
-    
     for (let shoe of array) {
-        if (shoe.price >= minPrice && shoe.price <= maxPrice) {
+        if (shoe.price >= x && shoe.price <= y) {
             filteredArray.push(shoe);
         }
     }
     return filteredArray;
 }
+
+console.log(amanda_filter(SHOES, 200, 900));
