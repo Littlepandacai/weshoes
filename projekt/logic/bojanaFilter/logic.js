@@ -1,3 +1,5 @@
+// Filter Countries
+
 "use strict";
 
 function filterByCountry(array) {
