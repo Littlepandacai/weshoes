@@ -7,7 +7,7 @@ function arrayFilter (array, callback) {
 
     let temp = [];
     for (let shoe of array) {
-        if (callback(shoe.price)) {
+        if (callback(shoe.kind_id)) {
             temp.push(shoe);
         }
     }
@@ -45,5 +45,5 @@ function arrayEach (array, callback) {
 
 
 console.log(arrayFilter(SHOES, function (x) {
-    
+    return x === 2;
 }));
