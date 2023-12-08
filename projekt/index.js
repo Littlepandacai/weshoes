@@ -1,6 +1,0 @@
-
-
-
-
-
-console.log(filterByCountry(SHOES));
