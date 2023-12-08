@@ -16,4 +16,3 @@ function amanda_filter (array, x, y) {
 }
 
 console.log(amanda_filter(SHOES, 200, 900));
-
