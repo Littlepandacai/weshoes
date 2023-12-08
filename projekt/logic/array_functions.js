@@ -3,7 +3,7 @@
 
 //arrayEach, går igenom en array och anropar callback function för varje element
 
-function arrayEach (array, callback) {
+function arrayFilter (array, callback) {
 
     let temp = [];
     for (let shoe of array) {
@@ -17,9 +17,6 @@ function arrayEach (array, callback) {
 
 //arrayFilter, testar maxPrice och returnerar boleskt värde (true/false)
 
-function arrayFilter (maxPrice) {
-    return maxPrice <= 1000;
-}
 
 function arrayFind (array, findFunction) 
 {
@@ -31,4 +28,22 @@ function arrayFind (array, findFunction)
   }
 }
 
-console.log(arrayEach(SHOES, arrayFilter));
+
+function arrayAverage(a) {
+    let sum = 0;
+    for (let i = 0; i < a.length; i++) {
+        sum += a[i];
+    }
+    return ("" + (sum / a.length)).substring(0, 4);
+}
+
+function arrayEach (array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        callback(array[i]);
+    }
+}
+
+
+console.log(arrayFilter(SHOES, function (x) {
+    
+}));
