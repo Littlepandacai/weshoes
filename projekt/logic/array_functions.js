@@ -3,7 +3,7 @@
 
 //arrayEach, går igenom en array och anropar callback function för varje element
 
-function arrayFilter (array, callback) {
+function arrayEach (array, callback) {
 
     let temp = [];
     for (let shoe of array) {
@@ -23,10 +23,11 @@ function arrayFilter (maxPrice) {
 
 function arrayFind (array, findFunction) 
 {
-  for (let element of array)
-  {
+  for (let element of array) {
     let resultat = findFunction(element);
-    if (resultat === true) return element;
+    if (resultat === true) {
+        return element;
+    }
   }
 }
 
