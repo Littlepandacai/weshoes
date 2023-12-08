@@ -173,3 +173,95 @@ function array_map(a, transform_function) {
     }
     return result;
 }
+
+
+
+
+
+
+
+//från Eriks lektion 7november
+
+function filter_shoes(array, max_price) {
+    let temp = [];
+    for (let shoe of array) {
+        if (shoe.price <= max_price) {
+            temp.push(shoe);
+        }
+    }
+    return temp;
+}
+// let filtered_shoes = filter_shoes(SHOES, 399);
+
+
+
+// function x (obj, max_price)
+// {
+//   return obj.price <= max_price;
+// }
+
+function array_filter(array, filter_function) {
+    let temp = [];
+    for (let element of array) {
+        if (filter_function(element)) {
+            temp.push(element);
+        }
+    }
+    return temp;
+}
+
+function array_find(array, find_function) {
+    for (let element of array) {
+        let resultat = find_function(element);
+        if (resultat === true) return element;
+    }
+}
+
+
+
+let filtered_shoes_2 = array_filter(SHOES, function (obj) {
+    return obj.price <= document.querySelector("input").value;
+});
+
+let sweden_shoes = array_filter(SHOES, function (obj) {
+
+    let country = array_find(COUNTRIES, function (obj) {
+        return obj.name === "Sweden";
+    });
+
+    return obj.country_id === country.id;
+
+});
+
+
+function reviews_of_shoe(array, shoe_id) {
+    return array_filter(array, function (obj) {
+        return obj.shoe_id === shoe_id;
+    });
+}
+
+function reviews_by_land(array, country_name) {
+    let a = [];
+    for (let review of array) {
+        let shoe_id = review.shoe_id;
+        let shoe_obj = array_find(SHOES, function (obj) {
+            return shoe_id === obj.id;
+        });
+
+        let country_id = shoe_obj.country_id;
+        let country_obj = array_find(COUNTRIES, function (obj) {
+            return country_id === obj.id;
+        });
+
+        let shoe_country_name = country_obj.name;
+        if (shoe_country_name === country_name) {
+            a.push(review)
+        }
+    }
+    return a;
+}
+
+
+function get_all_sizes_from_country(country_name) {
+
+}
