@@ -13,3 +13,21 @@ function amanda_filter (array, x, y) {
 }
 
 console.log(amanda_filter(SHOES, 200, 900));
+
+
+function filterShoes () {
+    let selectedShoes = SHOES;
+        //filterByCountry är en funktion
+    if (anyFilterChecked("country")) {
+        selectedShoes = filterByCountry(selectedShoes);
+    }
+        //filterByKind är en funktion
+    if (anyFilterChecked("kindOfShoe")) {
+        selectedShoes = filterByKind(selectedShoes);
+    }
+
+    if (anyFilterChecked("price")) {
+        selectedShoes = filterByPrice(selectedShoes);
+    }  
+    return selectedShoes;
+}
