@@ -1,5 +1,8 @@
 "use strict";
 
+// skapa funktionerna för de 3 filterna, countries, price, type of shoe
+//
+
 // filter för max-min pris av skorna
 
 function amanda_filter (array, x, y) {
@@ -13,3 +16,4 @@ function amanda_filter (array, x, y) {
 }
 
 console.log(amanda_filter(SHOES, 200, 900));
+
