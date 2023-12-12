@@ -1,13 +1,12 @@
 "use strict";
 
-function structure_Esmir ()
-{
-    const div = document.createElement("div");
-    document.body.appendChild(div);
-    div.setAttribute("id", "wrapper");
+function renderStructure() {
+  const div = document.createElement("div");
+  document.body.appendChild(div);
+  div.setAttribute("id", "wrapper");
 
-    const container = document.querySelector("#wrapper");
-    container.innerHTML = `
+  const container = document.querySelector("#wrapper");
+  container.innerHTML = `
     <nav>
         <p>LOGOTYPE</p>
     </nav>
