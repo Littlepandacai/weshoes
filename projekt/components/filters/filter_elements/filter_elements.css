@@ -1,0 +1,53 @@
+.filter_element
+{
+  padding: 2px 5px;
+  font-size: 14px;
+  
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter_element:hover
+{
+  cursor: pointer;
+}
+
+.check_container
+{
+  height: 100%;
+  flex-basis: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkmark {
+    display: hidden;
+}
+
+.checkmark_box {
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 20px;
+  width: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter_element.checked .checkmark_box {
+  position: relative;
+}
+
+.filter_element.checked .checkmark {
+  display: block;
+  position: absolute;
+}
+
+.filter_element.checked .text {
+  font-family: "RC-Regular";
+
+}
