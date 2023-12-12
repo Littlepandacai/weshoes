@@ -1,6 +1,6 @@
 "use strict";
 
-function structure_Esmir() {
+function renderStructure() {
   const div = document.createElement("div");
   document.body.appendChild(div);
   div.setAttribute("id", "wrapper");
