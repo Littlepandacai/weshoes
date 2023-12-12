@@ -174,15 +174,9 @@ function array_map(a, transform_function) {
     return result;
 }
 
+/*---------------------------------------------------------------------------------------------------------*/
 
-
-
-
-
-
-//från Eriks lektion 7november
-
-function filter_shoes(array, max_price) {
+function maxPriceFilter(array, max_price) {
     let temp = [];
     for (let shoe of array) {
         if (shoe.price <= max_price) {
@@ -191,47 +185,59 @@ function filter_shoes(array, max_price) {
     }
     return temp;
 }
-// let filtered_shoes = filter_shoes(SHOES, 399);
+
+/*
+let shoesMaxPrice = maxPriceFilter(SHOES, 300);
+console.log(shoesMaxPrice)
+*/
 
 
-
-// function x (obj, max_price)
-// {
-//   return obj.price <= max_price;
-// }
-
-function array_filter(array, filter_function) {
-    let temp = [];
-    for (let element of array) {
-        if (filter_function(element)) {
-            temp.push(element);
-        }
-    }
-    return temp;
-}
-
-function array_find(array, find_function) {
-    for (let element of array) {
-        let resultat = find_function(element);
-        if (resultat === true) return element;
-    }
-}
-
-
-
-let filtered_shoes_2 = array_filter(SHOES, function (obj) {
-    return obj.price <= document.querySelector("input").value;
-});
-
-let sweden_shoes = array_filter(SHOES, function (obj) {
-
-    let country = array_find(COUNTRIES, function (obj) {
-        return obj.name === "Sweden";
+function findCountryShoes(x) {
+    let countryShoes = array_filter(SHOES, function (obj) {
+        let shoesCountry = x
+        let country = array_find(COUNTRIES, function (obj) {
+            return obj.name === shoesCountry;
+        });
+        console.log(obj.country_id, country.id)
+        return obj.country_id === country.id;
     });
+    return countryShoes
+}
 
-    return obj.country_id === country.id;
+/*
+console.log(findCountryShoes("Sweden"))
+console.log(findCountryShoes("Spain"))
+console.log(findCountryShoes("Germany"))
+console.log(findCountryShoes("USA"))
+console.log(findCountryShoes("UK"))
+console.log(findCountryShoes("France"))
+console.log(findCountryShoes("Italy"))
+console.log(findCountryShoes("Japan"))
+*/
 
-});
+
+function shoesKindFilter(x) {
+    let kindOfShoes = array_filter(SHOES, function (obj) {
+        let kind = x
+        let kinds = array_find(KINDS, function (obj) {
+            return obj.name === kind;
+        });
+        //console.log(obj.country_id, country.id)
+        return obj.kind_id === kinds.id;
+    });
+    return kindOfShoes
+}
+
+/*
+console.log(shoesKindFilter("Slippers"))
+console.log(shoesKindFilter("Boots"))
+console.log(shoesKindFilter("Sneakers"))
+*/
+
+
+
+
+
 
 
 function reviews_of_shoe(array, shoe_id) {
@@ -261,7 +267,52 @@ function reviews_by_land(array, country_name) {
     return a;
 }
 
-
+/*
 function get_all_sizes_from_country(country_name) {
 
 }
+
+
+render_shoes(parent, SHOES)
+
+function render_shoes(parent, programme) {
+    for (let i = 0; i < SHOES.length; i++) {
+        const container = document.createElement("div");
+        container.classList.add("programme");
+        container.id = programme.id;
+        parent.append(container);
+
+
+        const shoesType = array_find(KINDS, function (x) { return x.id === programme[0].kind_id; });
+        const country = array_find(COUNTRIES, function (x) { return x.id === programme[0].country_id; });
+
+
+        container.innerHTML = `
+    <div>
+      <h1>${shoesType.name}</h1>
+      <div class="country">${COUNTRIES[0].name}</div>
+      <div class="price">${SHOES[i].price}sek</div>
+    </div>
+  `;
+
+
+        const image_path = SHOES[i].file_name;
+        console.log(image_path)
+        container.style.backgroundImage = `url(images/skobilder/${image_path})`;
+
+    }
+}
+
+/*function array_random_element(a) {
+    const random_index = get_random_number(a.length);
+    return a[random_index];
+}
+
+
+function get_random_number(max, min = 0) {
+    // Returns a random number between min (inclusive) and max (exclusive)
+
+    // Du behöver inte förstå det matematiska uttrycket nedan.
+    // Du måste dock förstå hur denna funktion används i array_random_element (array_functions.js)
+    return min + Math.floor(max * Math.random());
+}*/
