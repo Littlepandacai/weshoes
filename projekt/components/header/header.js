@@ -22,6 +22,8 @@ function render_nav() {
     `;
 
     return {
+        sidebar: container.querySelector("#sidebar"),
+        navigation: container.querySelector("#navigation"),
         menu: container.querySelector("#menu"),
         logo: container.querySelector("h1"),
         right: container.querySelector("#right"),
