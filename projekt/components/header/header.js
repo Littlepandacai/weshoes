@@ -14,7 +14,7 @@ function render_nav() {
             </div>
         </div>
         <h1>WeShoes</h1>
-        <div id="right">
+        <div id="nav_right">
             <input type="search" id="search_bar"></input>
             <div id="shopping_cart"></div>
         </div>

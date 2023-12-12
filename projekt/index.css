@@ -3,18 +3,18 @@
 
 
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: cavas_nera;
+    src: url("./fonts/CavasNera/CavasNeraFree.ttf");
 }
 
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: inter_regular;
+    src: url("./fonts/Inter/Inter-Regular.ttf");
 }
 
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: inter_bold;
+    src: url("./fonts/Inter/Inter-Bold.ttf");
 }
 
 
@@ -33,6 +33,10 @@
 
 root {}
 
-* {}
+* {
+    box-sizing: border-box;
+}
 
-body {}
+body {
+    margin: 0;
+}

@@ -61,7 +61,7 @@
     margin-left: 5px;
 }*/
 
-#right {
+#nav_right {
     display: flex;
     flex-grow: 1;
     flex-basis: 50px;
@@ -86,7 +86,7 @@
 header {
     height: 150px;
     display: grid;
-    grid-template-columns: 35% 80%;
+    grid-template-columns: 35% 65%;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -114,5 +114,5 @@ header>#title {
 header #title>#line {
     background-color: black;
     height: 5px;
-    margin-right: 230px;
+    margin-right: 10px;
 }
