@@ -68,32 +68,7 @@ function general_filter(programmes, filter_kind, attribute_id) {
     return programmes;
 }
 
-function filter_programmes() {
-    let selected_programmes = PROGRAMMES;
 
-    // Om staden är markerad, filtrera programmen baserat på staden
-    if (any_filter_checked("city")) {
-        selected_programmes = general_filter(selected_programmes, "city", "universityID");
-    }
-
-    // Om nivån är markerad, filtrera programmen baserat på nivån
-    if (any_filter_checked("level")) {
-        selected_programmes = general_filter(selected_programmes, "level", "levelID");
-    }
-
-    // Om ämnet är markerat, filtrera programmen baserat på ämnet
-    if (any_filter_checked("subject")) {
-        selected_programmes = general_filter(selected_programmes, "subject", "subjectID");
-    }
-
-    // Om språket är markerat, filtrera programmen baserat på språket
-    if (any_filter_checked("language")) {
-        selected_programmes = general_filter(selected_programmes, "language", "languageID");
-    }
-
-    // Returnera de slutliga filtrerade programmen
-    return selected_programmes;
-}
 
 // Här är förklaringarna för varje del:
 
