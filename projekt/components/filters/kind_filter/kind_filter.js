@@ -13,6 +13,6 @@ function renderKindFilter (parent) {
       container.append(kinds_checkmarks);
       kinds_checkmarks.classList.add("kinds_checkmarks");
   
-      render_filter_element(kinds_checkmarks, kind.name);
+      renderFilterElements(kinds_checkmarks, kind.name);
     }
   }

@@ -13,7 +13,7 @@ function renderCountryFilter (parent) {
     container.append(country_checkmarks);
     country_checkmarks.classList.add("country_checkmarks");
 
-    render_filter_element(country_checkmarks, country.name);
+    renderFilterElements(country_checkmarks, country.name);
    
   }
 }
