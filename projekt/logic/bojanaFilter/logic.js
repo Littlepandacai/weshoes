@@ -22,7 +22,6 @@ function filterIfTrue(shoe) {
 }
 
 
-
 //_________________________________________________________________
 
 // Eriks kod inlämningsuppgift filter.js - vi radera dettna kod när vi är klara med filterfunktionen, den är bara som hjälp.
@@ -151,63 +150,13 @@ function array_map(a, transform_function) {
 
 /*---------------------------------------------------------------------------------------------------------*/
 
-function maxPriceFilter(array, max_price) {
-    let temp = [];
-    for (let shoe of array) {
-        if (shoe.price <= max_price) {
-            temp.push(shoe);
-        }
-    }
-    return temp;
-}
-
-/*
-let shoesMaxPrice = maxPriceFilter(SHOES, 300);
-console.log(shoesMaxPrice)
-*/
 
 
-function findCountryShoes(x) {
-    let countryShoes = array_filter(SHOES, function (obj) {
-        let shoesCountry = x
-        let country = array_find(COUNTRIES, function (obj) {
-            return obj.name === shoesCountry;
-        });
-        console.log(obj.country_id, country.id)
-        return obj.country_id === country.id;
-    });
-    return countryShoes
-}
-
-/*
-console.log(findCountryShoes("Sweden"))
-console.log(findCountryShoes("Spain"))
-console.log(findCountryShoes("Germany"))
-console.log(findCountryShoes("USA"))
-console.log(findCountryShoes("UK"))
-console.log(findCountryShoes("France"))
-console.log(findCountryShoes("Italy"))
-console.log(findCountryShoes("Japan"))
-*/
 
 
-function shoesKindFilter(x) {
-    let kindOfShoes = array_filter(SHOES, function (obj) {
-        let kind = x
-        let kinds = array_find(KINDS, function (obj) {
-            return obj.name === kind;
-        });
-        //console.log(obj.country_id, country.id)
-        return obj.kind_id === kinds.id;
-    });
-    return kindOfShoes
-}
 
-/*
-console.log(shoesKindFilter("Slippers"))
-console.log(shoesKindFilter("Boots"))
-console.log(shoesKindFilter("Sneakers"))
-*/
+
+
 
 
 

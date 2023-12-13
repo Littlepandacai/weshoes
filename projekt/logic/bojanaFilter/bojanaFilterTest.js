@@ -3,7 +3,6 @@
 
 "use strict";
 
-
 function filterShoes() {
     let selectedShoes = SHOES;
 
@@ -27,10 +26,6 @@ function anyFilterChecked(filterKind) {
     const checkedFilters = document.querySelectorAll(`#${filterKind}_filters .checked`);
     return checkedFilters.length > 0;
 }
-
-
-
-
 
 
 
@@ -60,6 +55,8 @@ function generalFilter(shoes, filterKind, objectId) {
 
     return shoes;
 }
+
+
 
 function filterShoes() {
     let selectedShoes = SHOES;
