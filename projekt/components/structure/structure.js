@@ -8,10 +8,8 @@ function renderStructure() {
   const container = document.querySelector("#wrapper");
   container.innerHTML = `
     <nav>
-        <p>LOGOTYPE</p>
     </nav>
     <header>
-        <h1>SHOES / ALL</h1>
     </header>
     <main>
       <div id="left"></div>

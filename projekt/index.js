@@ -1,3 +1,4 @@
+
 // Med detta anrop skapar vi HTML-strukturen.
 // Returvärdet ger oss referenser till viktiga HTML-element.
 const structureContainers = renderStructure();
@@ -16,15 +17,21 @@ const structureContainers = renderStructure();
 
 //  OBS!!! inte den korrekta renderingen, måste korrigeras innan!!
 
-renderHeader(structureContainers.header);
-renderKindsFilters(structureContainers.left);
-renderCountriesFilters(structureContainers.left);
-renderPriceFilters(structureContainers.left);
-renderSorterList(structureContainers.rightTop)
-renderProgrammeList(structureContainers.rightBottom, SHOES);
-renderAboutUs(structureContainers.footer);
+render_header();
+render_nav();
+//renderHeader(structureContainers.header);
+// renderKindsFilters(structureContainers.left);
+// renderCountriesFilters(structureContainers.left);
+// renderPriceFilters(structureContainers.left);
+// renderSorterList(structureContainers.rightTop)
+// renderProgrammeList(structureContainers.rightBottom, SHOES);
+// renderAboutUs(structureContainers.footer);
 
 // Här ska resten av render_funktionerna anropas (listan av komponenter finns ovan).
 
-
+//funktion för att få sidebar att funka (om vi behöver en sidebar)
+let sidebar_menu = document.querySelector("#menu");
+sidebar_menu.addEventListener("click", function () {
+    document.querySelector("#sidebar").classList.toggle("active")
+})
 

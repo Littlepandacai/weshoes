@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-size: 30px;
+    line-height: 1.6;
+    background: #000000;
+    color: #ffffff;
+    overflow: hidden;
+
+    display: grid;
+}
+  
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+  
+.holder {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 10000vw;
+    height: 100vh;
+    transition: left 1s;
+}
+  
+.holder div {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 30px;
+}
+
+#button-carousel {
+    position: fixed;
+    left: 50%;
+}
+
+#circle {
+    position: fixed;
+    bottom: 70px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    right: auto;
+
+    border-radius: 50%;
+    height: 62px;
+    width: 62px;
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#circle > a {
+    font-size: 50px;
+    font-family: sans-serif;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle a > img {
+    height: 30px;
+}
+  
+.buttons > a {
+    padding: 20px 70px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    font-size: 100px;
+}
+  
+#prev {
+    left: 0;
+}
+  
+#next {
+    right: 0;
+}
+
+.slide-1 {
+    background-image: url(https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dbg-1.jpg);
+  }
+  
+.slide-2 {
+    background-image: url(https://images.unsplash.com/photo-1551111293-20c9c0ae923c?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  }
+  
+.slide-3 {
+    background-image: url(https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  }
+
+.slide-4 {
+    background-image: url(https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}

@@ -1,0 +1,31 @@
+#price_filter { 
+    background-color: lightgray;
+    width: 80%;
+    border-radius: 5px;
+    border: black 1px solid;
+}
+
+#price_input {
+    display: flex;
+    gap: 50px;
+}
+
+#price_input_field {
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+h3 {
+    padding: 15px 10px;
+}
+
+p {
+    padding: 0 10px;
+}
+
+#price_filter > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
