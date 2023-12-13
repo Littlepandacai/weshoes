@@ -18,7 +18,7 @@
 }
 
 
-@font-face {
+/* @font-face {
     font-family: ;
     src: url();
 }
@@ -27,11 +27,11 @@
 @font-face {
     font-family: ;
     src: url();
-}
+} */
 
 
 
-root {}
+/*::root {}*/
 
 * {
     box-sizing: border-box;
