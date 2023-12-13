@@ -89,11 +89,23 @@ function filter_by_country(programmes) {
 }
 
 function filter_by_price(programmes) {
-  const checked_country_doms = document.querySelectorAll("#country_filters .checked .text");
+    const checked_price_doms = document.querySelectorAll("#price_filters .checked .text");
 
-  const checked_country_names = array_map(checked_country_doms, function (dom) { return dom.textContent });
+    const checked_price_amount = array_map(checked_price_doms, function (dom) { return dom.textContent });
 
-  const checked_country_objects = array_map(checked_country_names, function (country_name) {
+    checked_price_amount = parseInt(checked_price_amount);
+
+    checked_price_objects = arrayFilter(SHOES, function (shoe) { 
+    return shoe.price <= checked_price_amount 
+});
+
+  return programmes;
+}
+
+
+
+/*
+const checked_country_objects = array_map(checked_country_names, function (country_name) {
     return array_find(COUNTRIES, function (country) {
       return country.name === country_name;
     });
@@ -106,6 +118,4 @@ function filter_by_price(programmes) {
   programmes = array_filter(programmes, function (programme) {
     return checked_country_ids.includes(programme.countryID);
   });
-
-  return programmes;
-}
+*/
