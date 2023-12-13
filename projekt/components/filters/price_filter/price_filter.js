@@ -11,5 +11,4 @@ function renderPriceFilter (parent) {
     </div>
     <p>AMOUNT OF ARTICLES</p>
     `;
-    
   }
