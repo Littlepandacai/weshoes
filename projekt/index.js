@@ -11,6 +11,7 @@ const structureContainers = renderStructure();
 // - priceFilters
 // - sorterList
 // - catalogueList
+// - popUp
 // - aboutUs
 
 // Så här renderas header med hjälp av returvärdet av render_structure:
@@ -19,13 +20,8 @@ const structureContainers = renderStructure();
 
 render_header();
 render_nav();
-//renderHeader(structureContainers.header);
-// renderKindsFilters(structureContainers.left);
-// renderCountriesFilters(structureContainers.left);
-// renderPriceFilters(structureContainers.left);
-// renderSorterList(structureContainers.rightTop)
-// renderProgrammeList(structureContainers.rightBottom, SHOES);
-// renderAboutUs(structureContainers.footer);
+renderPopUpFilter(parentElement);
+
 
 // Här ska resten av render_funktionerna anropas (listan av komponenter finns ovan).
 
