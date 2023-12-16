@@ -10,7 +10,7 @@ const structureContainers = renderStructure();
 // - countriesFilters
 // - priceFilters
 // - sorterList
-// - programmeList
+// - catalogueList
 // - aboutUs
 
 // Så här renderas header med hjälp av returvärdet av render_structure:
