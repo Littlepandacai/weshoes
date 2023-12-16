@@ -1,4 +1,28 @@
 
-.catalogue-object{
+.catalogueObject{
+    display:flex;
+    flex-direction: column;
+}
 
+
+.catalogueObject .textBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogueObject .textBox div {
+    display: flex;
+    
+    font-family: Inter;
+    font-size: 20px;
+}
+
+.catalogueObject .textBox div p:first-of-type{
+    justify-content: flex-start;
+    display: block;
+}
+
+.catalogueObject .textBox div p:nth-of-type(2){
+    justify-content: flex-end;
+    display: block;
 }
