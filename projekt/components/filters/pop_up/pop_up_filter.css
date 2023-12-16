@@ -39,13 +39,14 @@ button {
     /* pointer-events: none; */
 }
 
-/* .popup.open {
+
+/* detta kommer inte funkar
+.popup.open {
     pointer-events: auto;
     opacity: 1;
-} */
+} 
 
-
-/* .popup {
+ .popup {
     display: flex;
     align-items: center;
     justify-content: center;
