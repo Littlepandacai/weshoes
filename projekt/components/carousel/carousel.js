@@ -1,5 +1,8 @@
 "use strict";
 
+let body = document.querySelector("body");
+render_carousel(body);
+
 // Whenever we load the page, always display the first slide
 let currentSlide = 0;
 
@@ -27,7 +30,7 @@ function nextSlide() {
 
 
 // A function that takes us to the previous slide
-function previousSlide () {
+function previousSlide() {
   // Decrement the currentSlide value
   currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
 
@@ -75,3 +78,13 @@ document.body.addEventListener("keydown", function (event) {
     nextSlide();
   }
 });
+
+
+let button = document.querySelector("#circle");
+button.innerHTML = `
+<a href="#middle">
+  <a href="#wrapper"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Down_arrowhead.svg/1280px-Down_arrowhead.svg.png"></a>
+</a>
+`;
+
+

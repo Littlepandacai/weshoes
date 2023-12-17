@@ -11,7 +11,7 @@ function get_random_number(max, min = 0) {
     return min + Math.floor(max * Math.random());
 }
 
-function array_average(a) {
+function arrayAverage(a) {
     let sum = 0;
     for (let i = 0; i < a.length; i++) {
         sum += a[i];
@@ -20,17 +20,23 @@ function array_average(a) {
 }
 
 //arrayMap
-function array_map(a, transform_function) {
+function arrayMap(a, transformFunction) {
     let result = [];
     for (let i = 0; i < a.length; i++) {
-        result.push(transform_function(a[i]));
+        result.push(transformFunction(a[i]));
     }
     return result;
 }
 
 
+function arrayRandomElement(a) {
+    const randomIndex = getRandomNumber(a.length);
+    return a[randomIndex];
+}
+
+
 //arrayEach, går igenom en array och anropar callback function för varje element
-function array_each(array, callback) {
+function arrayEach(array, callback) {
     for (let i = 0; i < array.length; i++) {
         callback(array[i]);
     }
@@ -38,7 +44,7 @@ function array_each(array, callback) {
 
 
 //arrayFilter, testar maxPrice och returnerar boleskt värde (true/false)
-function array_filter(array, callback) {
+function arrayFilter(array, callback) {
     let temp = [];
     for (let element of array) {
         if (callback(element)) {
@@ -51,7 +57,7 @@ function array_filter(array, callback) {
 
 
 //Array find, returnerar det första elementet
-function array_find(array, findFunction) {
+function arrayFind(array, findFunction) {
     for (let element of array) {
         if (findFunction(element)) {
             return element;
@@ -64,65 +70,87 @@ function array_find(array, findFunction) {
 /*-------------------- skapa funktionerna för de 3 filterna, countries, price, type of shoe-----------------*/
 
 //Filter shoes by countries
-function find_country_shoes(country_shoe) {
-    let country_shoes = array_filter(SHOES, function (obj) {
-        let shoes_country = country_shoe
+function findCountryShoes(x) {
+    let countryShoes = array_filter(SHOES, function (obj) {
+        let shoesCountry = x
         let country = array_find(COUNTRIES, function (obj) {
-            return obj.name === shoes_country;
+            return obj.name === shoesCountry;
         });
+        console.log(obj.country_id, country.id)
         return obj.country_id === country.id;
     });
-    return country_shoes
+    return countryShoes
 }
 
 /*
-console.log(find_country_shoes("Sweden"));
-console.log(find_country_shoes("Spain"));
-console.log(find_country_shoes("Germany"));
-console.log(find_country_shoes("USA"));
-console.log(find_country_shoes("UK"));
-console.log(find_country_shoes("France"));
-console.log(find_country_shoes("Italy"));
-console.log(find_country_shoes("Japan"));
+console.log(findCountryShoes("Sweden"))
+console.log(findCountryShoes("Spain"))
+console.log(findCountryShoes("Germany"))
+console.log(findCountryShoes("USA"))
+console.log(findCountryShoes("UK"))
+console.log(findCountryShoes("France"))
+console.log(findCountryShoes("Italy"))
+console.log(findCountryShoes("Japan"))
 */
 
 
 //Filter shoes by kind
-function shoes_kind_filter(shoe) {
-    let kind_of_shoes = array_filter(SHOES, function (obj) {
-        let kind = shoe;
+function shoesKindFilter(x) {
+    let kindOfShoes = array_filter(SHOES, function (obj) {
+        let kind = x
         let kinds = array_find(KINDS, function (obj) {
             return obj.name === kind;
         });
         return obj.kind_id === kinds.id;
     });
-    return kind_of_shoes
+    return kindOfShoes
 }
 
 /*
-console.log(shoes_kind_filter("Slippers"))
-console.log(shoes_kind_filter("Boots"))
-console.log(shoes_kind_filter("Sneakers"))
+console.log(shoesKindFilter("Slippers"))
+console.log(shoesKindFilter("Boots"))
+console.log(shoesKindFilter("Sneakers"))
 */
-
 
 // filter för båda max och min pris av skorna
 
-function price_minmax_filter(array, min, max) {
-    let filtered_array = [];
+function amanda_filter(array, x, y) {
+    let filteredArray = [];
     for (let shoe of array) {
-        if (shoe.price >= min && shoe.price <= max) {
-            filtered_array.push(shoe);
+        if (shoe.price >= x && shoe.price <= y) {
+            filteredArray.push(shoe);
+        }
+        function arrayEach(array, callback) {
+            for (let i = 0; i < array.length; i++) {
+                callback(array[i]);
+            }
+            return filteredArray;
         }
     }
-    return filtered_array;
 }
+
+//console.log(amanda_filter(SHOES, 200, 900));
+
+//Filter för bara max-price
+function maxPriceFilter(array, max_price) {
+    let temp = [];
+    for (let shoe of array) {
+        if (shoe.price <= max_price) {
+            temp.push(shoe);
+        }
+    }
+    return temp;
+}
+
+/*
+let shoesMaxPrice = maxPriceFilter(SHOES, 300);
+console.log(shoesMaxPrice)
+*/
 
 
 //Reviews
-/*
 function reviews_by_land(array, country_name) {
-    let review_array = [];
+    let a = [];
     for (let review of array) {
         let shoe_id = review.shoe_id;
         let shoe_obj = array_find(SHOES, function (obj) {
@@ -136,53 +164,21 @@ function reviews_by_land(array, country_name) {
 
         let shoe_country_name = country_obj.name;
         if (shoe_country_name === country_name) {
-            review_array.push(review)
+            a.push(review)
         }
     }
-    
-    return review_array;
+    return a;
 }
-*/
-
-
-function reviews_by_land(array, country_name) {
-    let review_array = [];
-    for (let review of array) {
-      let shoe_id = review.shoe_id;
-
-      let shoe_obj = array_find(SHOES, function (obj) {
-        return shoe_id === obj.id;
-      });
-
-      if (shoe_obj) {
-        let country_id = shoe_obj.country_id;
-        let country_obj = array_find(COUNTRIES, function (obj) {
-          return country_id === obj.id;
-        });
-
-        if (country_obj) {
-          let shoe_country_name = country_obj.name;
-          if (shoe_country_name === country_name) {
-            review_array.push(review);
-          }
-        }
-      }
-    }
-    
-    return review_array;
-  }
-
-
-
-console.log(reviews_by_land(REVIEWS, "Germany"));
-
-
-
 
 function reviews_of_shoe(array, shoe_id) {
     return array_filter(array, function (obj) {
         return obj.shoe_id === shoe_id;
     });
+}
+
+
+function get_all_sizes_from_country(country_name) {
+
 }
 
 
