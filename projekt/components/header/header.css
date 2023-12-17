@@ -8,6 +8,10 @@
     box-sizing: border-box;
     padding: 0 10px;
     gap: 50px;
+
+    /* position: fixed;
+    top: 0; */
+    z-index: 1;
 }
 
 #menu {
@@ -91,7 +95,7 @@ header {
     margin-right: 10px;
 }
 
-header>#left {
+header>#header_left {
     flex-basis: 20%;
 }
 
