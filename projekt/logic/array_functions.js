@@ -69,22 +69,21 @@ function find_country_shoes(country_shoe) {
         let country = array_find(COUNTRIES, function (obj) {
             return obj.name === shoes_country;
         });
-        console.log(obj.country_id, country.id)
         return obj.country_id === country.id;
     });
     return country_shoes
 }
 
-/*
-console.log(find_country_shoes("Sweden"));
-console.log(find_country_shoes("Spain"));
-console.log(find_country_shoes("Germany"));
-console.log(find_country_shoes("USA"));
-console.log(find_country_shoes("UK"));
-console.log(find_country_shoes("France"));
-console.log(find_country_shoes("Italy"));
-console.log(find_country_shoes("Japan"));
-*/
+
+// console.log(find_country_shoes("Sweden"));
+// console.log(find_country_shoes("Spain"));
+// console.log(find_country_shoes("Germany"));
+// console.log(find_country_shoes("USA"));
+// console.log(find_country_shoes("UK"));
+// console.log(find_country_shoes("France"));
+// console.log(find_country_shoes("Italy"));
+// console.log(find_country_shoes("Japan"));
+
 
 //Filter shoes by kind
 function shoes_kind_filter(shoe) {
@@ -98,34 +97,27 @@ function shoes_kind_filter(shoe) {
     return kind_of_shoes
 }
 
-/*
-console.log(shoes_kind_filter("Slippers"))
-console.log(shoes_kind_filter("Boots"))
-console.log(shoes_kind_filter("Sneakers"))
-*/
+
+// console.log(shoes_kind_filter("Slippers"))
+// console.log(shoes_kind_filter("Boots"))
+// console.log(shoes_kind_filter("Sneakers"))
+
 
 // filter för båda max och min pris av skorna
 function price_minmax_filter(array, min, max) {
     let filtered_array = [];
-
     for (let shoe of array) {
         if (shoe.price >= min && shoe.price <= max) {
             filtered_array.push(shoe);
-            if (shoe.price >= x && shoe.price <= y) {
-                filteredArray.push(shoe);
-            }
-            function arrayEach(array, callback) {
-                for (let i = 0; i < array.length; i++) {
-                    callback(array[i]);
-                }
-                return filtered_array;
+            if (shoe.price >= min && shoe.price <= max) {
+                filtered_array.push(shoe);
             }
         }
-        return filtered_array;
     }
+    return filtered_array;
 }
 
-//console.log(amanda_filter(SHOES, 200, 900));
+//console.log(price_minmax_filter(SHOES, 200, 900));
 
 //Filter för bara max-price
 function maxPriceFilter(array, max_price) {
@@ -173,11 +165,6 @@ function reviews_of_shoe(array, shoe_id) {
 }
 
 
-function get_all_sizes_from_country(country_name) {
-
-}
-
-
 
 /*
 
@@ -205,13 +192,13 @@ function reviews_by_land(array, country_name) {
         }
       }
     }
-    
+
     return review_array;
   }
 
 */
 
-console.log(reviews_by_land(REVIEWS, "Germany"));
+//console.log(reviews_by_land(REVIEWS, "Germany"));
 
 
 
