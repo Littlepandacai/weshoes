@@ -23,6 +23,8 @@ render_nav(body);
 renderCountryFilter(left);
 renderKindFilter (left);
 renderPriceFilter (left);
+catalogue();
+render_catalogueObject();
 //renderPopUpFilter(parentElement);
 
 

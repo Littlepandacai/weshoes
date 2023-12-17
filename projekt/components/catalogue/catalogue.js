@@ -20,8 +20,6 @@ function catalogue () {
   };
 }
 
-catalogue();
-
 function render_catalogueObject(){
 
   const container = document.querySelectorAll(".catalogueObject");
@@ -39,8 +37,8 @@ function render_catalogueObject(){
   </div>
   `;
   return{
-    imageBox: container.querySelector(".imageBox"),
-    textBox: container.querySelector(".textBox"),
+    imageBox: document.querySelector(".imageBox"),
+    textBox: document.querySelector(".textBox"),
     // somethingsomething: container.querySelector("h2"),
     //somethingsomething: container.querySelector("p"),
   };
