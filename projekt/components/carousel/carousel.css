@@ -9,7 +9,6 @@
 body {
     font-size: 30px;
     line-height: 1.6;
-    background: #000000;
     color: #ffffff;
 }
   
@@ -40,12 +39,12 @@ body {
 }
 
 #button-carousel {
-    position: fixed;
+    position: absolute;
     left: 50%;
 }
 
 #circle {
-    position: fixed;
+    position: absolute;
     bottom: 70px;
     margin: auto;
     overflow: hidden;
