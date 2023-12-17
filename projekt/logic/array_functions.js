@@ -114,10 +114,10 @@ console.log(shoesKindFilter("Sneakers"))
 
 // filter för båda max och min pris av skorna
 
-function amanda_filter(array, x, y) {
+function price_filter(array, min, max) {
     let filteredArray = [];
     for (let shoe of array) {
-        if (shoe.price >= x && shoe.price <= y) {
+        if (shoe.price >= min && shoe.price <= max) {
             filteredArray.push(shoe);
         }
         function arrayEach(array, callback) {
