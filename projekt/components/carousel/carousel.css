@@ -11,9 +11,6 @@ body {
     line-height: 1.6;
     background: #000000;
     color: #ffffff;
-    overflow: hidden;
-
-    display: grid;
 }
   
 .slideshow {
