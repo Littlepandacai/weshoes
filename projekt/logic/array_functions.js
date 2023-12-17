@@ -183,7 +183,25 @@ function get_all_sizes_from_country(country_name) {
 
 
 
+function price_minmax_filter(array, min, max) {
+    let filteredArray = [];
 
+    for (let shoe of array) {
+        if (shoe.price >= min && shoe.price <= max) {
+            filteredArray.push(shoe);
+        if (shoe.price >= min && shoe.price <= max) {
+            filteredArray.push(shoe);
+        }
+        function arrayEach(array, callback) {
+            for (let i = 0; i < array.length; i++) {
+                callback(array[i]);
+            }
+            return filteredArray;
+        }
+        }
+    }
+    return filteredArray;
+}
 
 
 
