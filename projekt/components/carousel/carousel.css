@@ -10,6 +10,7 @@ body {
     font-size: 30px;
     line-height: 1.6;
     color: #ffffff;
+    overflow-x: hidden;
 }
   
 .slideshow {

@@ -28,6 +28,6 @@ function render_carousel (parent) {
         slide_2: document.querySelector(".slide-2"),
         slide_3: document.querySelector(".slide-3"),
         slide_4: document.querySelector(".slide-4"),
-        buttonCarousel: document.querySelector("button-carousel")
+        buttonCarousel: document.querySelector("#button-carousel")
     }
 }
