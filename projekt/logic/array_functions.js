@@ -186,15 +186,7 @@ function reviews_of_shoe(array, shoe_id) {
 }
 
 
-
-
-
-
-
-
-
-
-
+// is it back?
 
 
 
