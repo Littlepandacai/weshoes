@@ -41,7 +41,7 @@ function render_header() {
 
     const header = document.querySelector("header");
     header.innerHTML = `
-    <div id="left"></div>
+    <div id="header_left"></div>
     <div id="title">
         <h1>SHOES/<span>ALL</span></h1>
         <div id="line"></div>
@@ -49,7 +49,7 @@ function render_header() {
     `;
 
     return {
-        left: header.querySelector("#left"),
+        header_left: header.querySelector("#header_left"),
         title_box: header.querySelector("#title"),
         title: header.querySelector("h1"),
         line: header.querySelector("#line"),
