@@ -2,29 +2,65 @@
     background-color: lightgray;
     border-radius: 5px;
     border: black 1px solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
-#price_input {
-    display: flex;
-    gap: 50px;
-}
 
 #price_input_field {
-    width: 30%;
+    /* width: 30%; */
     margin-bottom: 15px;
 }
 
 h3 {
     padding: 15px 10px;
+    grid-column: 1;
 }
 
 p {
     padding: 0 10px;
 }
 
-#price_filter > p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
+#min_price_text {    
+    grid-column: 1;
+    grid-row: 2;
+
+    font-size: 25px;
 }
+
+#min_price_input{
+    grid-column: 2;
+    grid-row: 2;
+
+    width: 60%;
+    height: 100%;
+
+    margin: auto;
+}
+
+#max_price_text {
+    grid-column: 1;
+    grid-row: 3;
+
+    font-size: 25px;
+}
+
+#max_price_input {
+    grid-column: 2;
+    grid-row: 3;
+
+    width: 60%;
+    height: 100%;
+
+    margin: auto;
+}
+
+#amount {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+
+    font-size: 20px;
+    text-align: center;
+}
+

@@ -5,10 +5,12 @@ function renderPriceFilter (parent) {
   
     container.innerHTML = `
     <h3>PRICE</h3>
-    <div id="price_input">
-        <p>MAX PRICE</p>
-        <input id="price_input_field">
-    </div>
-    <p>AMOUNT OF ARTICLES</p>
+    <p id="min_price_text">MIN PRICE</p>
+    <input id="min_price_input">
+    <p id="max_price_text">MAX PRICE</p>
+    <input id="max_price_input">
+    <p id="amount">AMOUNT OF ARTICLES</p>
     `;
   }
+
+  
