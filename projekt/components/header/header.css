@@ -1,13 +1,21 @@
 #navigation {
     display: flex;
     height: 70px;
-    background-color: #A7194B;
+    background-color: #9A0A1B;
     align-items: center;
     justify-content: center;
 
     box-sizing: border-box;
     padding: 0 10px;
     gap: 50px;
+
+    /* position: fixed;
+    top: 0; */
+    z-index: 1;
+}
+
+nav {
+    display: flex;
 }
 
 #menu {
@@ -91,7 +99,7 @@ header {
     margin-right: 10px;
 }
 
-header>#left {
+header>#header_left {
     flex-basis: 20%;
 }
 

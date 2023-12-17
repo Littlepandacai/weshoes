@@ -9,7 +9,6 @@
 body {
     font-size: 30px;
     line-height: 1.6;
-    background: #000000;
     color: #ffffff;
 }
   
@@ -40,12 +39,12 @@ body {
 }
 
 #button-carousel {
-    position: fixed;
+    position: absolute;
     left: 50%;
 }
 
 #circle {
-    position: fixed;
+    position: absolute;
     bottom: 70px;
     margin: auto;
     overflow: hidden;
@@ -99,7 +98,7 @@ a {
 }
 
 .slide-1 {
-    background-image: url(https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dbg-1.jpg);
+    background-image: url(https://images.unsplash.com/photo-1633281651728-b7f0bd1f3eaa?q=80&w=3376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   }
   
 .slide-2 {

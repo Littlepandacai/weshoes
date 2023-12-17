@@ -7,10 +7,8 @@ function renderStructure() {
 
   const container = document.querySelector("#wrapper");
   container.innerHTML = `
-    <nav>
-    </nav>
-    <header>
-    </header>
+    <nav></nav>
+    <header></header>
     <main>
       <div id="left"></div>
       <div id="right">
