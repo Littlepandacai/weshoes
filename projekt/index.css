@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> structure_lucia
 /* Skapade bara tom början sålänge */
 
 
@@ -35,8 +40,17 @@
 
 * {
     box-sizing: border-box;
+<<<<<<< HEAD
+=======
+    color: #0e1111;
+>>>>>>> structure_lucia
 }
 
 body {
     margin: 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Stashed changes
+>>>>>>> structure_lucia
