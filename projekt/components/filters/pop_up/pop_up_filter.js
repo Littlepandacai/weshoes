@@ -1,11 +1,11 @@
 "use strict";
 
 function renderPopUpFilter(parent) {
-  const container = document.createElement("div");
-  container.id = "popupContainer";
-  parent.append(container);
+    const container = document.createElement("div");
+    container.id = "popupContainer";
+    parent.append(container);
 
-  container.innerHTML = `
+    container.innerHTML = `
   <button id="openPopupBtn">Click Me</button>
 
   <div class="popup" id="popup">
@@ -17,7 +17,7 @@ function renderPopUpFilter(parent) {
           <div id="boxTopLeft">
               <div id="kinds">
                   <h1>Name of Shoe</h1>
-                  <p>COUNTREY</p>
+                  <p>COUNTRY</p>
                   <p>TYPE</p>
               </div>
               <div id="size">
@@ -48,25 +48,25 @@ function renderPopUpFilter(parent) {
   </div>
     `;
 
-  const openPopupBtn = document.getElementById('openPopupBtn');
-  const closePopupBtn = document.getElementById('closePopupBtn');
-  const popup = document.getElementById('popup');
-  const popupText = document.getElementById('popupText');
+    const openPopupBtn = document.getElementById('openPopupBtn');
+    const closePopupBtn = document.getElementById('closePopupBtn');
+    const popup = document.getElementById('popup');
+    const popupText = document.getElementById('popupText');
 
-  openPopupBtn.addEventListener('click', function () {
-    popup.style.display = 'block';
-    popupText.innerHTML = 'WeShoes';
-  });
+    openPopupBtn.addEventListener('click', function () {
+        popup.style.display = 'block';
+        popupText.innerHTML = 'WeShoes';
+    });
 
-  closePopupBtn.addEventListener('click', function () {
-    popup.style.display = 'none';
-  });
+    closePopupBtn.addEventListener('click', function () {
+        popup.style.display = 'none';
+    });
 
-  // window.addEventListener('click', function (event) {
-  //     if (event.target === popup) {
-  //         popup.style.display = 'none';
-  //     }
-  // });
+    // window.addEventListener('click', function (event) {
+    //     if (event.target === popup) {
+    //         popup.style.display = 'none';
+    //     }
+    // });
 }
 
 
