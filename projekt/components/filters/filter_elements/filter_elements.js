@@ -11,6 +11,11 @@ function render_filter_element (parent, text) {
   `;
 
   container.addEventListener("click", function () {
+<<<<<<< Updated upstream
+=======
+    const checkmark_box = document.querySelector(".checkmark_box");
+    checkmark_box.innerHTML = `<p class="checkmark">X</p>`;
+>>>>>>> Stashed changes
     const checkmark_box = this.querySelector(".checkmark_box");
     
     // Toggle mellan "X" och inget innehåll
