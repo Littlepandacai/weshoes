@@ -1,3 +1,4 @@
+
 /* Skapade bara tom början sålänge */
 
 
@@ -35,8 +36,10 @@
 
 * {
     box-sizing: border-box;
+    color: #0e1111;
 }
 
 body {
     margin: 0;
+    
 }

@@ -1,5 +1,24 @@
+@font-face {
+    font-family: cavas_nera;
+    src: url("./fonts/CavasNera/CavasNeraFree.ttf");
+}
+
+@font-face {
+    font-family: inter_regular;
+    src: url("./fonts/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: inter_bold;
+    src: url("./fonts/Inter/Inter-Bold.ttf");
+}
+
+
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -25,52 +44,102 @@ button {
 }
 
 .popup {
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f3aeae;
-    padding: 250px;
+    background-color: #e8e8e8;
+    /* padding: 200px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    transition: opacity 0.3s ease;
+
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    /* transition: opacity 0.3s ease; */
     /* opacity: 0; */
     /* pointer-events: none; */
+
 }
 
 
-/* detta kommer inte funkar
-.popup.open {
-    pointer-events: auto;
-    opacity: 1;
-} 
-
- .popup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-} */
-
-
-
 .popup-content {
-    background-color: #f3aeae;
+    background-color: #e8e8e8;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.close {
+/* .close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 20px;
     cursor: pointer;
+} */
+
+
+#popUpItems {
+    display: grid;
+    /* grid-template-columns: repeat(2), 1fr;
+    grid-template-rows: repeat(2), 1fr; */
+}
+
+#kinds {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: baseline;
+}
+
+#size {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.sizeType {
+    background-color: #bbb9b9;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 3px;
+}
+
+#reviewsText {
+    display: flex;
+    background-color: #bbb9b9;
+    width: 50%;
+    padding: 100px;
+    grid-column: 1;
+}
+
+#reviews {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#image {
+    display: grid;
+    background-color: #bbb9b9;
+    width: 50%;
+    padding: 100px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#boxTopRight {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#price {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: center;
 }
