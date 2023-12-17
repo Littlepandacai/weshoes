@@ -1,0 +1,46 @@
+<<<<<<< Updated upstream
+=======
+/* Skapade bara tom början sålänge */
+
+
+
+@font-face {
+    font-family: cavas_nera;
+    src: url("./fonts/CavasNera/CavasNeraFree.ttf");
+}
+
+@font-face {
+    font-family: inter_regular;
+    src: url("./fonts/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: inter_bold;
+    src: url("./fonts/Inter/Inter-Bold.ttf");
+}
+
+
+/* @font-face {
+    font-family: ;
+    src: url();
+}
+
+
+@font-face {
+    font-family: ;
+    src: url();
+} */
+
+
+
+/*::root {}*/
+
+* {
+    box-sizing: border-box;
+    color: #0e1111;
+}
+
+body {
+    margin: 0;
+}
+>>>>>>> Stashed changes
