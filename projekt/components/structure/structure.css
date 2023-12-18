@@ -24,8 +24,14 @@ main {
     flex-direction: column;
 }
 
-#rightBottom {
+#rightBottom > #catalogue_list > ol {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5vw 2vw;
+
+}
+
+#rightBottom > #catalogue_list > ol > div {
+    background-size: contain;
+    background-repeat: no-repeat;
 }
