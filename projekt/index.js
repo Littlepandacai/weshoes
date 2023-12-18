@@ -27,7 +27,7 @@ renderPriceFilter(left);
 //render_catalogueObject();
 //renderPopUpFilter(parentElement);
 renderCatalogueList(rightBottom, SHOES);
-
+//renderFooter();
 
 
 
