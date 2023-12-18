@@ -1,10 +1,11 @@
-#price_filter { 
+#price_filter {
     background-color: #9A0A1B;
     border-radius: 5px;
     border: black 1px solid;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    margin-top: 5px;
 }
 
 
@@ -22,14 +23,14 @@ p {
     padding: 0 10px;
 }
 
-#min_price_text {    
+#min_price_text {
     grid-column: 1;
     grid-row: 2;
 
     font-size: 25px;
 }
 
-#min_price_input{
+#min_price_input {
     grid-column: 2;
     grid-row: 2;
 
@@ -63,4 +64,3 @@ p {
     font-size: 20px;
     text-align: center;
 }
-

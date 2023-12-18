@@ -1,7 +1,7 @@
 #navigation {
     display: flex;
     height: 75px;
-    width: 100vw;
+    width: 100%;
     background-color: #9A0A1B;
     align-items: center;
     justify-content: center;

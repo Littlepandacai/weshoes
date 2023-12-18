@@ -28,7 +28,6 @@ function array_map(a, transform_function) {
     return result;
 }
 
-
 //arrayEach, går igenom en array och anropar callback function för varje element
 function array_each(array, callback) {
     for (let i = 0; i < array.length; i++) {
@@ -75,16 +74,15 @@ function find_country_shoes(country_shoe) {
     return country_shoes
 }
 
-/*
-console.log(find_country_shoes("Sweden"));
-console.log(find_country_shoes("Spain"));
-console.log(find_country_shoes("Germany"));
-console.log(find_country_shoes("USA"));
-console.log(find_country_shoes("UK"));
-console.log(find_country_shoes("France"));
-console.log(find_country_shoes("Italy"));
-console.log(find_country_shoes("Japan"));
-*/
+
+// console.log(find_country_shoes("Sweden"));
+// console.log(find_country_shoes("Spain"));
+// console.log(find_country_shoes("Germany"));
+// console.log(find_country_shoes("USA"));
+// console.log(find_country_shoes("UK"));
+// console.log(find_country_shoes("France"));
+// console.log(find_country_shoes("Italy"));
+// console.log(find_country_shoes("Japan"));
 
 
 //Filter shoes by kind
@@ -99,28 +97,46 @@ function shoes_kind_filter(shoe) {
     return kind_of_shoes
 }
 
-/*
-console.log(shoes_kind_filter("Slippers"))
-console.log(shoes_kind_filter("Boots"))
-console.log(shoes_kind_filter("Sneakers"))
-*/
+
+// console.log(shoes_kind_filter("Slippers"))
+// console.log(shoes_kind_filter("Boots"))
+// console.log(shoes_kind_filter("Sneakers"))
 
 
 // filter för båda max och min pris av skorna
-
 function price_minmax_filter(array, min, max) {
     let filtered_array = [];
     for (let shoe of array) {
         if (shoe.price >= min && shoe.price <= max) {
             filtered_array.push(shoe);
+            if (shoe.price >= min && shoe.price <= max) {
+                filtered_array.push(shoe);
+            }
         }
     }
     return filtered_array;
 }
 
+//console.log(price_minmax_filter(SHOES, 200, 900));
+
+//Filter för bara max-price
+function maxPriceFilter(array, max_price) {
+    let temp = [];
+    for (let shoe of array) {
+        if (shoe.price <= max_price) {
+            temp.push(shoe);
+        }
+    }
+    return temp;
+}
+
+/*
+let shoesMaxPrice = maxPriceFilter(SHOES, 300);
+console.log(shoesMaxPrice)
+*/
+
 
 //Reviews
-/*
 function reviews_by_land(array, country_name) {
     let review_array = [];
     for (let review of array) {
@@ -139,10 +155,18 @@ function reviews_by_land(array, country_name) {
             review_array.push(review)
         }
     }
-    
     return review_array;
 }
-*/
+
+function reviews_of_shoe(array, shoe_id) {
+    return array_filter(array, function (obj) {
+        return obj.shoe_id === shoe_id;
+    });
+}
+
+
+
+/*
 
 
 function reviews_by_land(array, country_name) {
@@ -168,25 +192,26 @@ function reviews_by_land(array, country_name) {
         }
       }
     }
-    
+
     return review_array;
   }
 
+*/
+
+//console.log(reviews_by_land(REVIEWS, "Germany"));
 
 
-console.log(reviews_by_land(REVIEWS, "Germany"));
 
 
 
 
-function reviews_of_shoe(array, shoe_id) {
+
+/* function reviews_of_shoe(array, shoe_id) {
     return array_filter(array, function (obj) {
         return obj.shoe_id === shoe_id;
     });
 }
-
-
-// is it back?
+*/
 
 
 
