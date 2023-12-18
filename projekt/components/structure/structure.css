@@ -32,17 +32,26 @@ main {
 #rightBottom>#catalogue_list>ol {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5vw 2vw;
+    gap: 2vw 2vw;
 
 }
 
 #rightBottom>#catalogue_list>ol>div {
+    width: 300px;
+
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* border: 1px solid black;
+    /* background-color: white; */
+
+}
+
+#rightBottom>#catalogue_list>ol>.catalogue>#shoe-img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid black;
-
-    width: 250px;
+    height: 300px;
 }
 
 #shoeBoxText {
@@ -50,4 +59,15 @@ main {
     flex-direction: column;
     justify-content: end;
     align-items: start;
+
+    font-family: inter_regular;
+    font-size: 14px;
 }
+
+#shoeBoxText>h1 {
+    font-family: inter_bold;
+}
+
+/* #shoeBoxText>* {
+    color: black !important;
+} */

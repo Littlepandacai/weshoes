@@ -3,11 +3,15 @@
   border: black 1px solid;
   border-radius: 5px;
   padding-bottom: 20px;
+  font-family: "inter_regular";
 }
 
-.country_container h3 {
+#contry_filter>h3 {
+  font-family: "Inter_bold";
+}
+
+.country_container>h3 {
   font-size: 20px;
-  font-family: "Inter";
   color: white;
 }
 

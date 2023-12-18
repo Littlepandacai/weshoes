@@ -104,13 +104,13 @@ header>#header_left {
 }
 
 header h1 {
-    font-family: inter_regular;
+    font-family: cavas_nera;
     font-size: 5vw;
     margin: 0;
 }
 
 header h1>span {
-    font-family: inter_bold;
+    font-family: cavas_nera;
 }
 
 header>#title {

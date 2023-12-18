@@ -12,15 +12,17 @@ function renderCatalogue(parent, shoes) {
     const price = array_find(SHOES, (x) => x.price === shoes[i].price)
 
     container.innerHTML = `
+        <div id="shoe-img"></div>
         <div id="shoeBoxText">
           <h1>${shoes[i].name}</h1>
           <div class="country">${country.name}</div>
           <div class="type">${type.name}</div>
-          <div class="type">${price.price}sek</div>
+          <div class="price">${price.price}sek</div>
         </div>
       `;
 
     const image_path = shoes[i].file_name;
-    container.style.backgroundImage = `url(./images/skobilder/${image_path})`;
+    const shoeImg = container.querySelector("#shoe-img");
+    shoeImg.style.backgroundImage = `url(./images/skobilder/${image_path})`;
   }
 }

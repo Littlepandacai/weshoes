@@ -43,7 +43,7 @@ function render_header() {
     header.innerHTML = `
     <div id="header_left"></div>
     <div id="title">
-        <h1>SHOES/<span>ALL</span></h1>
+        <h1>SHOES  /<span> ALL</span></h1>
         <div id="line"></div>
     </div>
     `;
