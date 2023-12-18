@@ -20,5 +20,6 @@ function renderCatalogue(parent, shoes) {
   
       const image_path = shoes[i].file_name;
       container.style.backgroundImage = `url(./images/skobilder/${image_path})`;
+      console.log("loop");
     }
   }

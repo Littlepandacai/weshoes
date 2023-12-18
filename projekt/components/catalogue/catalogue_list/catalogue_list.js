@@ -34,10 +34,10 @@ function updateCatalogueList () {
   else
   {
     feedback_dom.style.display = "none";
-    for (let shoe of catalogue)
-    {
+    
+    
       renderCatalogue(list_dom, catalogue);
-    }
+    
     
     //sort_programme_list();
   }
