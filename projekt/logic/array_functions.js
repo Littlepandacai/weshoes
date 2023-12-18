@@ -206,8 +206,12 @@ function reviews_by_land(array, country_name) {
 
 
 
-
-
+/* function reviews_of_shoe(array, shoe_id) {
+    return array_filter(array, function (obj) {
+        return obj.shoe_id === shoe_id;
+    });
+}
+*/
 
 
 
