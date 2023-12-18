@@ -6,7 +6,7 @@ function renderCatalogueList(parent, catalogue) {
   parent.append(container);
 
   container.innerHTML = `
-    <p class="feedback"></p>ca
+    <p class="feedback"></p>
     <ol></ol>
   `;
 
