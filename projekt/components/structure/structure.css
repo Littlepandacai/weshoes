@@ -26,7 +26,6 @@ main {
 
 #rightBottom {
     display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5vw 2vw;
 }

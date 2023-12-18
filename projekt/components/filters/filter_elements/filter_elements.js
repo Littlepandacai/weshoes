@@ -17,6 +17,6 @@ function renderFilterElements(parent, text) {
     checkmark_box.innerHTML = checkmark_box.innerHTML === "" ? `<p class="checkmark">X</p>` : "";
 
     container.classList.toggle("checked");
-    // update catalogue
+    updateCatalogueList();
   });
 }
