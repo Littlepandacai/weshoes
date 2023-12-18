@@ -1,13 +1,14 @@
 #country_filter {
-    background-color: #9A0A1B;
-    border: black 1px solid;
-    border-radius: 5px;
-    padding-bottom: 20px;
+  background-color: #9A0A1B;
+  border: black 1px solid;
+  border-radius: 5px;
+  padding-bottom: 20px;
 }
 
 .country_container h3 {
   font-size: 20px;
   font-family: "Inter";
+  color: white;
 }
 
 .country_checkmarks {
@@ -19,6 +20,3 @@
 .checkmark_box {
   background-color: white;
 }
-
-
-

@@ -10,6 +10,7 @@ nav {
 
 main {
     display: flex;
+    background-color: #55000A;
 }
 
 #left {
@@ -22,6 +23,10 @@ main {
 
     display: flex;
     flex-direction: column;
+}
+
+#catalogue_list {
+    margin-top: 18px;
 }
 
 #rightBottom>#catalogue_list>ol {

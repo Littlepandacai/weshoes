@@ -33,21 +33,22 @@
     font-size: 4vw;
     margin: 0;
     margin-top: 7px;
-
+    color: white;
 }
 
 .bar1 {
     width: 25px;
     height: 5px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 6px 0;
     border-radius: 5px;
+
 }
 
 .bar2 {
     width: 25px;
     height: 5px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 6px 0;
     border-radius: 5px;
 }
@@ -55,7 +56,7 @@
 .bar3 {
     width: 25px;
     height: 5px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 6px 0;
     border-radius: 5px;
 }
@@ -93,8 +94,9 @@ header {
     height: 150px;
     display: grid;
     grid-template-columns: 35% 65%;
-    margin-left: 10px;
-    margin-right: 10px;
+    background-color: #55000A;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 header>#header_left {
@@ -118,7 +120,7 @@ header>#title {
 }
 
 header #title>#line {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     height: 5px;
     margin-right: 10px;
 }

@@ -1,8 +1,8 @@
-
-.catalogueObject{
-    display:flex;
+.catalogueObject {
+    display: flex;
     flex-direction: column;
 }
+
 .imageBox p {
     font-size: 20px;
     font-family: Inter;
@@ -10,35 +10,36 @@
     background-color: rgba(255, 255, 255, 0.75);
     border: 1px solid black;
     padding: 4%;
-   
-    position:absolute;
+
+    position: absolute;
     bottom: 50px;
     right: 50px;
 }
 
-.catalogueObject .textBox{
+.catalogueObject .textBox {
     display: flex;
     flex-direction: column;
 }
 
 .catalogueObject .textBox div {
     display: flex;
-    
+
     color: white;
     font-family: Inter;
     font-size: 20px;
 }
-.catalogueObject .textBox div h3{
+
+.catalogueObject .textBox div h3 {
     font-weight: bold;
     font-size: 24px;
 }
 
-.catalogueObject .textBox div p:first-of-type{
+.catalogueObject .textBox div p:first-of-type {
     justify-content: flex-start;
     display: block;
 }
 
-.catalogueObject .textBox div p:nth-of-type(2){
+.catalogueObject .textBox div p:nth-of-type(2) {
     justify-content: flex-end;
     display: block;
 }
