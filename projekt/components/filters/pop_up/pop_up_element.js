@@ -1,10 +1,10 @@
 "use strict";
 
 //let shoeImg = document.querySelector("#shoe-img");
-let imag = document.querySelectorAll(".catalogue #shoe-img")
+let img = document.querySelectorAll(".catalogue #shoe-img")
 let wrapper = document.querySelector("#wrapper");
 
-for (let shoe of imag) {
+for (let shoe of img) {
 
     shoe.addEventListener("click", function renderPopUpFilter(wrapper) {
         console.log("hej")
@@ -71,7 +71,6 @@ for (let shoe of imag) {
         //         popup.style.display = 'none';
         //     }
         // });
-
 
     });
 }
