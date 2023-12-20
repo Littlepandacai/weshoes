@@ -1,18 +1,19 @@
 "use strict";
 
-//let shoeImg = document.querySelector("#shoe-img");
-let img = document.querySelectorAll(".catalogue #shoe-img")
-let wrapper = document.querySelector("#wrapper");
+function renderPopUpElement() {
+    let shoeImg = document.querySelectorAll(".catalogue > div:first-child");
+    console.log(shoeImg);
+    // let img = document.querySelectorAll(".catalogue #shoe-img")
+    let wrapper = document.querySelector("#wrapper");
 
-for (let shoe of img) {
+    for (let shoe of shoeImg) {
 
-    shoe.addEventListener("click", function renderPopUpFilter(wrapper) {
-        console.log("hej")
-        const container = document.createElement("div");
-        container.id = "popupContainer";
-        parent.append(container);
+        shoe.addEventListener("click", function renderPopUpFilter() {
+            const container = document.createElement("div");
+            container.id = "popupContainer";
+            wrapper.append(container);
 
-        container.innerHTML = `
+            container.innerHTML = `
     
       <div class="popup" id="popup">
             <span class="close" id="closePopupBtn">&times;</span>
@@ -53,31 +54,32 @@ for (let shoe of img) {
         `;
 
 
-        const closePopupBtn = document.getElementById('closePopupBtn');
-        const popup = document.getElementById('popup');
+            const closePopupBtn = document.getElementById('closePopupBtn');
+            const popup = document.getElementById('popup');
 
 
-        openPopupBtn.addEventListener('click', function () {
-            popup.style.display = 'block';
+            openPopupBtn.addEventListener('click', function () {
+                popup.style.display = 'block';
+
+            });
+
+            closePopupBtn.addEventListener('click', function () {
+                popup.style.display = 'none';
+            });
+
+            // window.addEventListener('click', function (event) {
+            //     if (event.target === popup) {
+            //         popup.style.display = 'none';
+            //     }
+            // });
 
         });
+    }
 
-        closePopupBtn.addEventListener('click', function () {
-            popup.style.display = 'none';
-        });
 
-        // window.addEventListener('click', function (event) {
-        //     if (event.target === popup) {
-        //         popup.style.display = 'none';
-        //     }
-        // });
 
-    });
+    // const parentElement = document.body;
+    // renderPopUpFilter(parentElement);
+
 }
-
-
-
-// const parentElement = document.body;
-// renderPopUpFilter(parentElement);
-
 
