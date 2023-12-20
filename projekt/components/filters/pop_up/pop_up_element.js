@@ -17,7 +17,7 @@ function renderPopUpElement() {
                     return shoe.id === review.shoe_id;
                 });
 
-                //console.log(reviewArray);
+
                 for (let review of reviewArray) {
                     let container = document.querySelector("#reviewsText");
                     let reviewDiv = document.createElement("div");
@@ -35,7 +35,6 @@ function renderPopUpElement() {
 
                     }
                 }
-
             }
 
 
@@ -88,6 +87,5 @@ function renderPopUpElement() {
 
         });
     }
-
 }
 
