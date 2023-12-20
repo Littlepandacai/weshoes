@@ -93,7 +93,7 @@
 header {
     height: 150px;
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 32% 68%;
     background-color: #55000A;
     /* margin-left: 10px;
     margin-right: 10px; */
