@@ -2,14 +2,15 @@
 
 function renderPopUpElement() {
     let shoeImg = document.querySelectorAll(".catalogue > div:first-child");
-    let wrapper = document.querySelector("#wrapper");
+
+    let main = document.querySelector("main");
 
     for (let shoe of shoeImg) {
 
         shoe.addEventListener("click", function renderPopUpFilter() {
             const container = document.createElement("div");
             container.id = "popupContainer";
-            wrapper.append(container);
+            main.append(container);
 
             container.innerHTML = `
     
@@ -51,7 +52,13 @@ function renderPopUpElement() {
       </div>
         `;
 
+            let closePopUpBtn = document.querySelector("#closePopupBtn")
+            closePopUpBtn.addEventListener("click", function () {
+                container.remove();
+            });
+
         });
     }
+
 }
 

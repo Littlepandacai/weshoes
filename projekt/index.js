@@ -27,6 +27,7 @@ renderPriceFilter(left);
 //render_catalogueObject();
 
 renderCatalogueList(rightBottom, SHOES);
+renderPopUpElement();
 renderFooter(structureContainers.footer);
 
 
@@ -37,4 +38,3 @@ let sidebar_menu = document.querySelector("#menu");
 sidebar_menu.addEventListener("click", function () {
     document.querySelector("#sidebar").classList.toggle("active")
 })
-renderPopUpElement();
