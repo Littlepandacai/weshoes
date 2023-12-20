@@ -13,8 +13,6 @@
     src: url("./fonts/Inter/Inter-Bold.ttf");
 }
 
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -82,8 +80,9 @@ button {
 
 #popUpItems {
     display: grid;
-    /* grid-template-columns: repeat(2), 1fr;
-    grid-template-rows: repeat(2), 1fr; */
+    grid-template-columns: 100px;
+    grid-template-rows: 100px;
+    gap: 150px;
 }
 
 #kinds {
@@ -93,9 +92,18 @@ button {
     align-items: baseline;
 }
 
+#kinds>h1 {
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+#kinds>p {
+    font-size: 14px;
+}
+
 #size {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 25px;
 }
 
@@ -104,36 +112,42 @@ button {
     padding: 5px;
     border: 1px solid black;
     margin: 3px;
+    font-size: 14px;
 }
 
 #reviewsText {
     display: flex;
     background-color: #bbb9b9;
-    width: 50%;
-    padding: 100px;
+    width: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+    height: 150px;
     grid-column: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 #reviews {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 #image {
     display: grid;
     background-color: #bbb9b9;
-    width: 50%;
+    width: 200px;
     padding: 100px;
-    grid-column: 2;
-    grid-row: 2;
+    height: 220px;
 }
 
 #boxTopRight {
     display: flex;
     grid-column: 2;
     grid-row: 1;
+    height: 100px;
+    margin-top: 10px;
 }
 
 #price {
@@ -142,4 +156,36 @@ button {
     justify-content: space-evenly;
     margin-top: 30px;
     align-items: center;
+}
+
+#reviews>p {
+    padding: 0px;
+}
+
+#kinds>p {
+    padding: 0px;
+}
+
+#reviewsText>p {
+    padding: 0;
+    font-size: 14px;
+}
+
+#boxBottomRight {
+    height: 50px;
+    width: 100px;
+}
+
+#boxBottomRight>div {
+    font-size: 20px;
+}
+
+#price {
+    margin-top: 0;
+    margin-left: 90px;
+}
+
+#buy {
+    margin-left: 40px;
+    border-radius: 20px;
 }

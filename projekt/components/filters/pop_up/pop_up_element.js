@@ -29,7 +29,7 @@ function renderPopUpFilter(parent) {
                   <div class="sizeType">42</div>
               </div>
               <div id="reviews">
-                  <img src="" alt="star">
+                  <p>0/5</p>
               </div>
           </div>
           <div id="reviewsText">
