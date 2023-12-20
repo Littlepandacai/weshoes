@@ -28,7 +28,7 @@ renderPriceFilter(left);
 //renderPopUpFilter(parentElement);
 renderCatalogueList(rightBottom, SHOES);
 //renderFooter();
-
+renderFooter(structureContainers.footer);
 
 
 // Här ska resten av render_funktionerna anropas (listan av komponenter finns ovan).
