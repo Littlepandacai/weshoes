@@ -119,6 +119,7 @@ button {
     grid-column: 1;
     align-items: center;
     justify-content: center;
+    overflow-y: scroll;
 }
 
 #reviews {
