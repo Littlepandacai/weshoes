@@ -45,7 +45,7 @@ function filter_by_kind(shoes) {
   });
 
   shoes = array_filter(shoes, function (catalouge) {
-    return checked_kind_ids.includes(catalouge.kindID);
+    return checked_kind_ids.includes(catalouge.kind_id);
   });
 
   return shoes;
