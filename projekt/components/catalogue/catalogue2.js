@@ -17,7 +17,7 @@ function renderCatalogue(parent, shoes) {
           <h1>${shoes[i].name}</h1>
           <div class="country">${country.name}</div>
           <div class="type">${type.name}</div>
-          <div class="price">${price.price}sek</div>
+          <div class="price">${price.price} sek</div>
         </div>
       `;
 
