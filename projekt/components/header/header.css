@@ -95,8 +95,6 @@ header {
     display: grid;
     grid-template-columns: 32% 68%;
     background-color: #55000A;
-    /* margin-left: 10px;
-    margin-right: 10px; */
 }
 
 header>#header_left {
@@ -123,4 +121,8 @@ header #title>#line {
     background-color: rgb(255, 255, 255);
     height: 5px;
     margin-right: 10px;
+}
+
+#title {
+    margin-top: 60px;
 }
