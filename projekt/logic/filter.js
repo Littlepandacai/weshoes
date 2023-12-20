@@ -73,7 +73,7 @@ function filter_by_country(shoes) {
   {
     for (let shoes of SHOES)
     {
-      if (shoes.countryID === country_id)
+      if (shoes.country_id === country_id)
       {
         shoes_ids.push(shoes.id);
       }
