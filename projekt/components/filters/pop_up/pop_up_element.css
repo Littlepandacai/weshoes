@@ -55,6 +55,7 @@ button {
     width: 500px;
     height: 500px;
     padding: 20px;
+    padding-top: 40px;
     /* transition: opacity 0.3s ease; */
     /* opacity: 0; */
     /* pointer-events: none; */
@@ -65,8 +66,11 @@ button {
 .popup-content {
     background-color: #e8e8e8;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 0;
 }
 
 /* .close {
@@ -77,6 +81,11 @@ button {
     cursor: pointer;
 } */
 
+#closePopupBtn {
+    position: absolute;
+    top: 0;
+    left: 465px;
+}
 
 #popUpItems {
     display: grid;

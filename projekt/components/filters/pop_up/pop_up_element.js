@@ -9,10 +9,8 @@ function renderPopUpFilter(parent) {
   <button id="openPopupBtn">Click Me</button>
 
   <div class="popup" id="popup">
-      <div class="popup-content" id="popupContent">
-          <span class="close" id="closePopupBtn">&times;</span>
-          <!-- <p id="popupText">WeShoes!</p> -->
-      </div>
+        <span class="close" id="closePopupBtn">&times;</span>
+        <!-- <p id="popupText">WeShoes!</p> -->
       <div id="popUpItems">
           <div id="boxTopLeft">
               <div id="kinds">
