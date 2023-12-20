@@ -11,7 +11,7 @@ function renderKindFilter (parent) {
     {
       const kinds_checkmarks = document.createElement("div");
       container.append(kinds_checkmarks);
-      kinds_checkmarks.classList.add("kinds_checkmarks");
+      kinds_checkmarks.classList.add("kind_checkmarks");
   
       renderFilterElements(kinds_checkmarks, kind.name);
     }

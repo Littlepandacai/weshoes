@@ -1,0 +1,62 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9A0A1B;
+}
+
+button {
+    color: #000;
+    background-color: #FFF;
+
+    height: 4vh;
+    width: 20vw;
+
+    font-size: 25px;
+
+    transition: all 200ms;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #000;
+}
+
+.boxBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#infoBox {
+    height: 50vh;
+    width: 50vw;
+    background-color: #FFF;
+    color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imgContainer {
+    background-image: url(../../images/aboutus/aboutUs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 75%;
+    width: 100%;
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
