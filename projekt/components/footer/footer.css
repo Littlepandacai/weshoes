@@ -49,7 +49,7 @@ button:hover {
 }
 
 #imgContainer {
-    background-image: url(../../../../../aboutUs.jpg);
+    background-image: url(../../images/aboutus/aboutUs.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -60,11 +60,3 @@ button:hover {
     border-radius: 5px;
 }
 
-#xBtn {
-    height: 5%;
-    width: 5%;
-
-    position: fixed;
-    top: 0;
-    right: 0;
-}
