@@ -23,7 +23,7 @@ function filter_shoes() {
 
 
 function any_filter_checked(filter_kind) {
-  const checked_filters = document.querySelectorAll(`#${filter_kind}_filter > .checked`);   //Beroende på hur elementen ser ut får selektorn ändras för högre specificitet
+  const checked_filters = document.querySelectorAll(`#${filter_kind}_filter > .${filter_kind}_checkmarks > .checked`);   //Beroende på hur elementen ser ut får selektorn ändras för högre specificitet
   return checked_filters.length > 0;
 }
 
@@ -69,21 +69,18 @@ function filter_by_country(shoes) {
   });
 
   const shoes_ids = [];
-  for (let country_id of checked_country_ids)
-  {
-    for (let shoes of SHOES)
-    {
-      if (shoes.countryID === country_id)
-      {
+  for (let country_id of checked_country_ids) {
+    for (let shoes of SHOES) {
+      if (shoes.country_id === country_id) {
         shoes_ids.push(shoes.id);
       }
     }
 
-  shoes = array_filter(shoes, function (catalouge) {
-    return shoes_ids.includes(catalouge.id);
-  });
+    shoes = array_filter(shoes, function (catalouge) {
+      return shoes_ids.includes(catalouge.id);
+    });
 
-  return shoes;
+    return shoes;
   }
 }
 
