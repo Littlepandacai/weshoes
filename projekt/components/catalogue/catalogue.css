@@ -43,3 +43,7 @@
     justify-content: flex-end;
     display: block;
 }
+
+#shoeBoxText {
+    font-family: jaldi_regular;
+}

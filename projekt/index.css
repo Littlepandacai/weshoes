@@ -18,13 +18,13 @@
 }
 
 
-/* @font-face {
-    font-family: ;
-    src: url();
+@font-face {
+    font-family: jaldi_regular;
+    src: url("./fonts/Jaldi/Jaldi-Regular.ttf");
 }
 
 
-@font-face {
+/*@font-face {
     font-family: ;
     src: url();
 } */
