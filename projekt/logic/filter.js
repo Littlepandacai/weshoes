@@ -75,14 +75,14 @@ function filter_by_country(shoes) {
         shoes_ids.push(shoes.id);
       }
     }
-
+  }
     shoes = array_filter(shoes, function (catalouge) {
       return shoes_ids.includes(catalouge.id);
     });
 
     return shoes;
-  }
 }
+
 
 
 
