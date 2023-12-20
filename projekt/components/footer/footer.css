@@ -9,7 +9,7 @@ button {
     color: #000;
     background-color: #FFF;
 
-    height: 4vh;
+    height: 7vh;
     width: 20vw;
 
     font-size: 25px;
@@ -46,6 +46,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 #imgContainer {
@@ -60,3 +61,14 @@ button:hover {
     border-radius: 5px;
 }
 
+.exitButton {
+    width: 1vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    border-radius: 50%;
+
+}

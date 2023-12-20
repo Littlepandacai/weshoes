@@ -14,6 +14,15 @@ function renderFooter (parent) {
         box.textContent = "MEET THE TEAM BEHIND WeSHOES";
         overlay.appendChild(box);
 
+        const exitbutton = document.createElement("button");
+        exitbutton.textContent = "X";
+        exitbutton.classList.add("exitButton");
+        exitbutton.addEventListener("click", function () {
+        parent.removeChild(overlay);
+        });
+        
+        box.appendChild(exitbutton);
+
         const imgContainer = document.createElement("div");
         imgContainer.id = "imgContainer";
 
