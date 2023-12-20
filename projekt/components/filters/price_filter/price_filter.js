@@ -11,7 +11,7 @@ function renderPriceFilter(parent) {
     <input id="min_price_input">
     <p id="max_price_text">MAX PRICE</p>
     <input id="max_price_input">
-    <p id="amount">AMOUNT OF ARTICLES</p>
+    <p id="amount"></p>
     <p id="result"></p>
     `;
 
@@ -39,6 +39,6 @@ function amount_products(amount) {
     let container = document.querySelector("#amount");
     let result = document.querySelector("#result")
     container.appendChild(result);
-    result.innerHTML = `<p>${amount} products</p>`
+    result.innerHTML = `<p>${amount} ARTICLES</p>`
     return amount
 }
