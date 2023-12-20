@@ -11,6 +11,35 @@ function renderPopUpElement() {
             const container = document.createElement("div");
             container.id = "popupContainer";
             main.append(container);
+            for (let product of SHOES) {
+
+                let reviewArray = array_filter(REVIEWS, function (review) {
+                    return shoe.id === review.shoe_id;
+                });
+
+                //console.log(reviewArray);
+                for (let review of reviewArray) {
+                    let container = document.querySelector("#reviewsText");
+                    let reviewDiv = document.createElement("div");
+                    reviewDiv.classList.add("reviewDiv");
+                    container.appendChild(reviewDiv);
+
+                    reviewDiv.innerHTML = `
+                        <h1 id="score">${review.score}</h1>
+                        <p id="revText">${review.rev}</p>      
+                    `;
+
+                    if (review.rev === "") {
+                        let revText = document.querySelector("#revText");
+                        revText.textContent = "No review text.";
+
+                    }
+                }
+
+            }
+
+
+
 
             container.innerHTML = `
     

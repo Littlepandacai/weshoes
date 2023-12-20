@@ -29,6 +29,4 @@ function renderCatalogue(parent, shoes) {
 }
 
 
-// const shoeImg = container.querySelector("#shoe-img");
-// let wrapper = document.querySelector("#wrapper");
-// shoeImg.addEventListener("click", renderPopUpFilter(wrapper));
+
