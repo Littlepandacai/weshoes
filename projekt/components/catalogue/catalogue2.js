@@ -24,7 +24,7 @@ function renderCatalogue(parent, shoes) {
     const image_path = shoes[i].file_name;
     const shoeImg = container.querySelector("#shoe-img");
     shoeImg.style.backgroundImage = `url(./images/skobilder/${image_path})`;
-    // image_path.addEventListener("click", function (renderPopUpFilter));
+    // shoeImg.addEventListener("click", function (renderPopUpFilter));
   }
 }
 
