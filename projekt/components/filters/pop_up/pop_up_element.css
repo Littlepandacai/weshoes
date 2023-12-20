@@ -159,6 +159,10 @@ button {
     margin-top: 10px;
 }
 
+#boxTopLeft {
+    margin-left: 5px;
+}
+
 #price {
     display: flex;
     margin-top: 20px;
