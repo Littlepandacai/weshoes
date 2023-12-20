@@ -22,6 +22,7 @@
 
 .checkmark {
   display: hidden;
+  color: black;
 }
 
 .checkmark_box {

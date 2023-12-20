@@ -15,6 +15,11 @@
     margin-bottom: 15px;
 }
 
+#max_price_input,
+#min_price_input {
+    color: black;
+}
+
 h3 {
     padding: 15px 10px;
     grid-column: 1;
