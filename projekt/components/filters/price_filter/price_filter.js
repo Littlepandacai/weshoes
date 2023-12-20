@@ -42,3 +42,5 @@ function amount_products(amount) {
     result.innerHTML = `<p>${amount} ARTICLES</p>`
     return amount
 }
+
+
