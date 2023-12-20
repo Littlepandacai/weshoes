@@ -72,3 +72,7 @@ main {
 /* #shoeBoxText>* {
     color: black !important;
 } */
+
+.price {
+    font-size: 22px;
+}
