@@ -37,5 +37,4 @@ function updateCatalogueList() {
 
     //sort_programme_list();
   }
-
 }
