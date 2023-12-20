@@ -2,8 +2,7 @@
 
 function renderPopUpElement() {
     let shoeImg = document.querySelectorAll(".catalogue > div:first-child");
-    console.log(shoeImg);
-    // let img = document.querySelectorAll(".catalogue #shoe-img")
+
     let wrapper = document.querySelector("#wrapper");
 
     for (let shoe of shoeImg) {
