@@ -95,6 +95,7 @@ header {
     display: grid;
     grid-template-columns: 32% 68%;
     background-color: #55000A;
+    padding-top: 20px;
 }
 
 header>#header_left {
