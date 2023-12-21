@@ -26,7 +26,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #e8e8e8;
+    background-color: rgba(232, 232, 232, 0.98);
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 100;
@@ -40,6 +40,7 @@ button {
     font-family: "inter_regular";
     margin: 0;
     padding: 0;
+    border-radius: 4px;
 
     display: flex;
     justify-content: center;
@@ -96,20 +97,22 @@ button {
 }
 
 #kinds>h1 {
-    font-size: 22px;
+    font-size: 26px;
+    font-family: "Inter_bold";
     white-space: nowrap;
     color: #9A0A1B;
 }
 
 #kinds>p {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
     color: #9A0A1B;
 }
 
 #size {
     display: flex;
     justify-content: flex-start;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .sizeType {
@@ -129,7 +132,8 @@ button {
     width: 320px;
     padding-left: 120px;
     padding-right: 120px;
-    height: 150px;
+    /* height: 150px; */
+    height: 180px;
     grid-column: 1;
     align-items: center;
     justify-content: center;
@@ -142,7 +146,7 @@ button {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 #image {
