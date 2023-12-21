@@ -92,13 +92,21 @@ function filter_by_price(shoes) {
 
   const checked_price_amount = array_map(checked_price_doms, function (dom) { return dom.textContent });
 
-  checked_price_amount = parseInt(checked_price_amount);
+  let price_checker;
 
-  let checked_price_objects = array_filter(SHOES, function (shoe) {
-    return shoe.price <= checked_price_amount
+  if (checked_price_amount.includes("Under 300kr")) {
+    price_checker = 300;
+
+  } else if (checked_price_amount.includes("Under 700kr")) {
+    price_checker = 700;
+
+  } else if (checked_price_amount.includes("Under 1000kr")) {
+    price_checker = 1000;
+  }
+
+  shoes = array_filter(SHOES, function (shoe) {
+    return shoe.price <= price_checker;
   });
-
-  shoes = checked_price_objects;
 
   return shoes;
 }
