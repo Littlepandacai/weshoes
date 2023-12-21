@@ -52,35 +52,38 @@ function renderPopUpElement() {
             `;
 
             let shoeId = Number(shoe.getAttribute("id"));
-            console.log(shoeId);
+            // console.log(shoeId);
             let reviewArray = array_filter(REVIEWS, function (product) {
-             return product.shoe_id === shoeId});
+                return product.shoe_id === shoeId
+            });
 
             for (let review of reviewArray) {
-                
-                        let revContainer = document.querySelector("#reviewsText");
-                        let reviewDiv = document.createElement("div");
-                        reviewDiv.classList.add("reviewDiv");
-                        revContainer.appendChild(reviewDiv);
 
-                        reviewDiv.innerHTML = `
+                let revContainer = document.querySelector("#reviewsText");
+                let reviewDiv = document.createElement("div");
+                reviewDiv.classList.add("reviewDiv");
+                revContainer.appendChild(reviewDiv);
+
+                reviewDiv.innerHTML = `
                             <h1 id="score">${review.score}</h1>
                             <p id="revText">${review.rev}</p>      
                         `;
 
-                        if (review.rev === "") {
-                            let revText = document.querySelector("#revText");
-                            revText.textContent = "No review text.";
+                if (review.rev === "") {
+                    let revText = document.querySelector("#revText");
+                    revText.textContent = "No review text.";
 
-                        }
                 }
-            
+            }
+
 
 
             let closePopUpBtn = document.querySelector("#closePopupBtn")
             closePopUpBtn.addEventListener("click", function () {
                 container.remove();
             });
+
+
 
         });
     }
