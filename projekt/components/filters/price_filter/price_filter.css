@@ -12,7 +12,7 @@
 
 #price_input_field {
     /* width: 30%; */
-   /* margin-bottom: 15px;
+/* margin-bottom: 15px;
 }
 
 #max_price_input,
@@ -80,19 +80,23 @@ p {
     border-radius: 5px;
     padding-bottom: 20px;
     margin-top: 5px;
-  }
-  
-  .price_container h3 {
+}
+
+.price_container h3 {
     font-size: 20px;
     font-family: "Inter";
-  }
-  
-  .price_checkmarks {
+}
+
+.price_checkmarks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
-  }
-  
-  .checkmark_box {
+}
+
+.checkmark_box {
     background-color: white;
-  }
+}
+
+#result {
+    font-size: 20px;
+}
