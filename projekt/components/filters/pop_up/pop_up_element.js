@@ -52,7 +52,7 @@ function renderPopUpElement() {
             `;
 
             let shoeId = Number(shoe.getAttribute("id"));
-            // console.log(shoeId);
+            console.log(shoeId);
             let reviewArray = array_filter(REVIEWS, function (product) {
                 return product.shoe_id === shoeId
             });
@@ -76,7 +76,8 @@ function renderPopUpElement() {
                 }
             }
 
-
+            let image_box = document.querySelector("#image");
+            image_box.style.backgroundImage = shoe.style.backgroundImage
 
             let closePopUpBtn = document.querySelector("#closePopupBtn")
             closePopUpBtn.addEventListener("click", function () {
