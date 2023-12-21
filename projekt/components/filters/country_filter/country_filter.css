@@ -6,8 +6,9 @@
   font-family: "inter_regular";
 }
 
-#contry_filter>h3 {
+#country_filter>h3 {
   font-family: "Inter_bold";
+  margin: 20px;
 }
 
 .country_container>h3 {
@@ -19,6 +20,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2px;
+  margin-left: 15px;
 }
 
 .checkmark_box {
