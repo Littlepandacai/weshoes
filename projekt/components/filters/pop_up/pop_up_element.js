@@ -1,19 +1,21 @@
 "use strict";
 
-function renderPopUpElement() {
+function renderPopUpElement(parent) {
     let shoeImg = document.querySelectorAll(".catalogue > div:first-child");
-
-    let main = document.querySelector("main");
+    //let main = document.querySelector("main");
 
     for (let shoe of shoeImg) {
 
         shoe.addEventListener("click", function renderPopUpFilter() {
+            const overlay = document.createElement("div");
+            overlay.classList.add("popupBackground");
+            parent.appendChild(overlay);
+
             const container = document.createElement("div");
             container.id = "popupContainer";
-            main.append(container);
+            overlay.appendChild(container);
 
             container.innerHTML = `
-    
             <div class="popup" id="popup">
                 <span class="close" id="closePopupBtn">&times;</span>
                 <div id="popUpItems">
@@ -36,7 +38,6 @@ function renderPopUpElement() {
                         </div>
                     </div>
                     <div id="reviewsText">
-                        <p class="content">Reviews, content</p>
                     </div>
                     <div id="boxTopRight">
                         <div id="image"></div>
@@ -52,13 +53,16 @@ function renderPopUpElement() {
             `;
 
             let shoeId = Number(shoe.getAttribute("id"));
-            console.log(shoeId);
-            let reviewArray = array_filter(REVIEWS, function (product) {
-             return product.shoe_id === shoeId});
+            let reviewArray = array_filter(REVIEWS, function (product) 
+            {
+             return product.shoe_id === shoeId 
+            });
 
+            let revContainer = document.querySelector("#reviewsText");
+            revContainer.innerHTML = ``;
             for (let review of reviewArray) {
                 
-                        let revContainer = document.querySelector("#reviewsText");
+ 
                         let reviewDiv = document.createElement("div");
                         reviewDiv.classList.add("reviewDiv");
                         revContainer.appendChild(reviewDiv);
@@ -71,20 +75,22 @@ function renderPopUpElement() {
                         if (review.rev === "") {
                             let revText = document.querySelector("#revText");
                             revText.textContent = "No review text.";
-
-                        }
-                }
+                           }
+            }
+                          
             
-
 
             let closePopUpBtn = document.querySelector("#closePopupBtn")
             closePopUpBtn.addEventListener("click", function () {
                 container.remove();
-            });
-
         });
-    }
+        
+        overlay.addEventListener("click", function(event) {
+            if (event.target === overlay) {
+                parent.removeChild(overlay);
+            }
+        });
+
+    });
 }
-
-
-
+}
