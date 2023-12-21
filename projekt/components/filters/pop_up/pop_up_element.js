@@ -101,7 +101,7 @@ function renderPopUpElement(parent) {
 
             let closePopUpBtn = document.querySelector("#closePopupBtn")
             closePopUpBtn.addEventListener("click", function () {
-                container.remove();
+                overlay.remove();
             });
 
             overlay.addEventListener("click", function (event) {
