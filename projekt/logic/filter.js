@@ -5,14 +5,19 @@ function filter_shoes() {
 
   if (any_filter_checked("kind")) {
     selected_shoes = filter_by_kind(selected_shoes);
+    amount_products(selected_shoes.length)
   }
 
   if (any_filter_checked("country")) {
     selected_shoes = filter_by_country(selected_shoes);
+    amount_products(selected_shoes.length)
   }
 
   if (any_filter_checked("price")) {
     selected_shoes = filter_by_price(selected_shoes);
+    amount_products(selected_shoes.length)
+  } else {
+    amount_products("275")
   }
 
   return selected_shoes;
@@ -76,11 +81,11 @@ function filter_by_country(shoes) {
       }
     }
   }
-    shoes = array_filter(shoes, function (catalouge) {
-      return shoes_ids.includes(catalouge.id);
-    });
+  shoes = array_filter(shoes, function (catalouge) {
+    return shoes_ids.includes(catalouge.id);
+  });
 
-    return shoes;
+  return shoes;
 }
 
 

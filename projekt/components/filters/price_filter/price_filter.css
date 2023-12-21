@@ -82,11 +82,6 @@ p {
     margin-top: 5px;
 }
 
-#price_filter h3 {
-    font-family: "Inter_bold";
-    margin: 20px;
-}
-
 .price_container h3 {
     font-size: 20px;
     font-family: "Inter";
@@ -96,9 +91,12 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
-    margin-left: 15px;
 }
 
 .checkmark_box {
     background-color: white;
+}
+
+#result {
+    font-size: 20px;
 }
