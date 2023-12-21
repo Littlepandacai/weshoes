@@ -53,9 +53,9 @@ function renderPopUpElement(parent) {
             `;
 
             let shoeId = Number(shoe.getAttribute("id"));
-            let reviewArray = array_filter(REVIEWS, function (product) 
-            {
-             return product.shoe_id === shoeId 
+            console.log(shoeId);
+            let reviewArray = array_filter(REVIEWS, function (product) {
+                return product.shoe_id === shoeId
             });
 
             let revContainer = document.querySelector("#reviewsText");
@@ -77,7 +77,9 @@ function renderPopUpElement(parent) {
                             revText.textContent = "No review text.";
                            }
             }
-                          
+
+            let image_box = document.querySelector("#image");
+            image_box.style.backgroundImage = shoe.style.backgroundImage
 
             let closePopUpBtn = document.querySelector("#closePopupBtn")
             closePopUpBtn.addEventListener("click", function () {

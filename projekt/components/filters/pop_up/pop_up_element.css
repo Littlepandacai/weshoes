@@ -111,6 +111,7 @@ button {
 
 #reviewsText {
     display: flex;
+    flex-direction: column;
     background-color: #bbb9b9;
     width: 50px;
     padding-left: 120px;
@@ -120,6 +121,8 @@ button {
     align-items: center;
     justify-content: center;
     overflow-y: scroll;
+
+    font-size: 15px;
 }
 
 #reviews {
@@ -135,6 +138,8 @@ button {
     width: 200px;
     padding: 100px;
     height: 220px;
+    background-position: center;
+    background-size: contain;
 }
 
 #boxTopRight {
