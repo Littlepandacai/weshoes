@@ -31,7 +31,8 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 100;
 
-    width: 500px;
+    width: 700px;
+    /* width: 500px; */
     height: 500px;
     padding: 20px;
     padding-top: 40px;
@@ -72,14 +73,18 @@ button {
 #closePopupBtn {
     position: absolute;
     top: 0;
-    left: 465px;
+    /* left: 465px; */
+    left: 650px;
     z-index: 100;
 }
 
 #popUpItems {
     display: grid;
-    grid-template-columns: 100px;
-    grid-template-rows: 100px;
+    /* grid-template-columns: 100px;
+    grid-template-rows: 100px; */
+
+    grid-template-columns: 200px;
+    grid-template-rows: 120px;
     gap: 150px;
 }
 
@@ -120,7 +125,8 @@ button {
     display: flex;
     /* flex-direction: column; */
     background-color: #bbb9b9;
-    width: 50px;
+    /* width: 50px; */
+    width: 320px;
     padding-left: 120px;
     padding-right: 120px;
     height: 150px;
@@ -147,6 +153,7 @@ button {
     height: 220px;
     background-position: center;
     background-size: contain;
+    /* margin-right: 60px; */
 }
 
 #boxTopRight {
