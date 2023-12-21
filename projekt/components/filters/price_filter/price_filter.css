@@ -1,4 +1,4 @@
-#price_filter {
+/* #price_filter {
     background-color: #9A0A1B;
     border-radius: 5px;
     font-family: "Inter_regular";
@@ -12,7 +12,7 @@
 
 #price_input_field {
     /* width: 30%; */
-    margin-bottom: 15px;
+   /* margin-bottom: 15px;
 }
 
 #max_price_input,
@@ -71,3 +71,28 @@ p {
     font-size: 20px;
     text-align: center;
 }
+*/
+
+#price_filter {
+    background-color: #9A0A1B;
+    border: black 1px solid;
+    font-family: "Inter_regular";
+    border-radius: 5px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+  }
+  
+  .price_container h3 {
+    font-size: 20px;
+    font-family: "Inter";
+  }
+  
+  .price_checkmarks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+  }
+  
+  .checkmark_box {
+    background-color: white;
+  }
