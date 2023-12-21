@@ -104,7 +104,7 @@ function filter_by_price(shoes) {
     price_checker = 1000;
   }
 
-  shoes = array_filter(SHOES, function (shoe) {
+  shoes = array_filter(shoes, function (shoe) {
     return shoe.price <= price_checker;
   });
 
