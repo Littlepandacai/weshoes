@@ -120,7 +120,7 @@ function price_minmax_filter(array, min, max) {
 //console.log(price_minmax_filter(SHOES, 200, 900));
 
 //Filter för bara max-price
-function maxPriceFilter(array, max_price) {
+function max_price_filter(array, max_price) {
     let temp = [];
     for (let shoe of array) {
         if (shoe.price <= max_price) {
