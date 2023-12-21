@@ -1,4 +1,4 @@
-"use strict";
+/* "use strict";
 
 function renderPriceFilter(parent) {
     const container = document.createElement("div");
@@ -42,5 +42,24 @@ function amount_products(amount) {
     result.innerHTML = `<p>${amount} ARTICLES</p>`
     return amount
 }
+*/ 
 
-
+  function renderPriceFilter(parent) {
+    const container = document.createElement("div");
+    container.id = "price_filter";
+    parent.append(container);
+  
+    container.innerHTML = `
+      <h3>PRICE</h3>
+    `;
+  
+    const priceRanges = ['Under 300kr', 'Under 700kr', 'Under 1000kr'];
+  
+    for (const price of priceRanges) {
+      const priceCheckmarks = document.createElement("div");
+      container.append(priceCheckmarks);
+      priceCheckmarks.classList.add("price_checkmarks");
+  
+      renderFilterElements(priceCheckmarks, price);
+    }
+  }
