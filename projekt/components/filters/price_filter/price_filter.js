@@ -34,32 +34,34 @@ function renderPriceFilter(parent) {
 }
 
 let amount_div = document.createElement("div")
+*/
+// function amount_products(amount) {
+//   let container = document.querySelector("#amount");
+//   let result = document.querySelector("#result")
+//   container.appendChild(result);
+//   result.innerHTML = `<p>${amount} ARTICLES</p>`
+//   return amount
+// }
 
-function amount_products(amount) {
-    let container = document.querySelector("#amount");
-    let result = document.querySelector("#result")
-    container.appendChild(result);
-    result.innerHTML = `<p>${amount} ARTICLES</p>`
-    return amount
-}
-*/ 
 
-  function renderPriceFilter(parent) {
-    const container = document.createElement("div");
-    container.id = "price_filter";
-    parent.append(container);
-  
-    container.innerHTML = `
+function renderPriceFilter(parent) {
+  const container = document.createElement("div");
+  container.id = "price_filter";
+  parent.append(container);
+
+  container.innerHTML = `
       <h3>PRICE</h3>
+      <p id="amount"></p>
+      <p id="result"></p>
     `;
-  
-    const priceRanges = ['Under 300kr', 'Under 700kr', 'Under 1000kr'];
-  
-    for (const price of priceRanges) {
-      const priceCheckmarks = document.createElement("div");
-      container.append(priceCheckmarks);
-      priceCheckmarks.classList.add("price_checkmarks");
-  
-      renderFilterElements(priceCheckmarks, price);
-    }
+
+  const priceRanges = ['Under 300kr', 'Under 700kr', 'Under 1000kr'];
+
+  for (const price of priceRanges) {
+    const priceCheckmarks = document.createElement("div");
+    container.append(priceCheckmarks);
+    priceCheckmarks.classList.add("price_checkmarks");
+
+    renderFilterElements(priceCheckmarks, price);
   }
+}
