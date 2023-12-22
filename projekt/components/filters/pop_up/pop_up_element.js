@@ -46,7 +46,9 @@ function renderPopUpElement(parent) {
                                 <div class="sizeType">41</div>
                                 <div class="sizeType">42</div>
                             </div>
-                            <div id="reviews"></div>
+                            <div id="reviews">
+                            <p>Reviews</p>
+                            </div>
                         </div>
                         <div id="reviewsText">
                         </div>
@@ -64,9 +66,6 @@ function renderPopUpElement(parent) {
                 `;
 
 
-
-
-
             let shoeId = Number(shoe.getAttribute("id"));
             let reviewArray = array_filter(REVIEWS, function (product) {
                 return product.shoe_id === shoeId
@@ -76,15 +75,12 @@ function renderPopUpElement(parent) {
             revContainer.innerHTML = ``;
             for (let review of reviewArray) {
 
-                let reviewScore = container.querySelector("#reviews");
-                reviewScore.textContent = `${review.score}/5`;
-
                 let reviewDiv = document.createElement("div");
                 reviewDiv.classList.add("reviewDiv");
                 revContainer.appendChild(reviewDiv);
 
                 reviewDiv.innerHTML = `
-                            <h1 id="score">${review.score}</h1>
+                            <h1 id="score">${review.score}/5</h1>
                             <p id="revText">${review.rev}</p>      
                         `;
 
