@@ -53,3 +53,17 @@
     background-position: center;
     background-size: cover;
 }
+
+.catalogue:hover {
+    cursor: pointer;
+
+    /* transform: scale(1.02);
+    transition: all 0.500s ease-in-out; */
+}
+
+.shoe-img:hover {
+    cursor: pointer;
+
+    /* transform: scale(1.1);
+    transition: all 0.500s ease-in-out; */
+}

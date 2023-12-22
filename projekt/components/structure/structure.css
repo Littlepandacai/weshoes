@@ -36,6 +36,9 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw 2vw;
 
+    /* gap: 1vw 1vw;
+    margin-left: 20px; */
+
 }
 
 #rightBottom>#catalogue_list>ol>div {
