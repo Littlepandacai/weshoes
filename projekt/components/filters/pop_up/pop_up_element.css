@@ -46,7 +46,7 @@ button {
     justify-content: center;
     align-items: center;
 
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
     cursor: pointer;
     /*pointer-events: none;*/
 
@@ -76,6 +76,7 @@ button {
     top: 0;
     /* left: 465px; */
     left: 650px;
+    color: #9A0A1B;
     z-index: 100;
 }
 
@@ -168,6 +169,7 @@ button {
     justify-content: left;
     align-items: center;
     margin-top: 40px;
+    color: #9A0A1B;
 }
 
 #image {

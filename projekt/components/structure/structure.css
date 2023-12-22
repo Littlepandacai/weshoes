@@ -34,10 +34,10 @@ main {
 #rightBottom>#catalogue_list>ol {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2vw 2vw;
+    /* gap: 2vw 2vw; */
 
-    /* gap: 1vw 1vw;
-    margin-left: 20px; */
+    gap: 2vw 1vw;
+    margin-left: 20px;
 
 }
 
@@ -65,12 +65,14 @@ main {
     justify-content: end;
     align-items: start;
 
-    font-family: jaldi_regular;
+    font-family: "jaldi_regular";
     font-size: 14px;
+    margin-left: 8px;
 }
 
 #shoeBoxText>h1 {
-    font-family: inter_bold;
+    font-family: "inter_bold";
+    margin-top: 8px;
 }
 
 /* #shoeBoxText>* {
