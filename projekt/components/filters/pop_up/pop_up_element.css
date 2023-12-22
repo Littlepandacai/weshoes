@@ -121,6 +121,7 @@ button {
     background-color: #bbb9b9;
     padding: 5px;
     border: 1px solid black;
+    border-radius: 2px;
     margin: 3px;
     font-size: 14px;
     color: #9A0A1B;
@@ -131,7 +132,9 @@ button {
     flex-direction: column;
     background-color: #bbb9b9;
     width: 320px;
+
     padding: 10px 20px 10px 20px;
+    border-radius: 5px;
     /* height: 150px; */
     height: 180px;
     grid-column: 1;
@@ -178,6 +181,7 @@ button {
     width: 200px;
     padding: 100px;
     height: 220px;
+    border-radius: 5px;
     background-position: center;
     background-size: contain;
     /* margin-right: 60px; */
