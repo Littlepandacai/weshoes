@@ -18,5 +18,8 @@ function renderFilterElements(parent, text) {
 
     container.classList.toggle("checked");
     updateCatalogueList();
+
+    const main = document.querySelector("main");
+    renderPopUpElement(main);
   });
 }
