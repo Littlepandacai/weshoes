@@ -6,21 +6,19 @@ footer {
 }
 
 button {
-    color: #000;
-    background-color: #FFF;
+    color: #9A0A1B;
+    background-color: #bbb9b9;
 
     /* height: 7vh; */
     width: 20vw;
-
     font-size: 20px;
-
     transition: all 200ms;
 }
 
 button:hover {
     cursor: pointer;
     color: #FFF;
-    background-color: #000;
+    background-color: #55000A;
 }
 
 .boxBackground {
@@ -37,27 +35,29 @@ button:hover {
 }
 
 #infoBox {
-    height: 50vh;
+    height: 80vh;
     width: 50vw;
-    background-color: #FFF;
-    color: #000;
+    background-color: #bbb9b9;
+    border-radius: 5px;
+    color: #9A0A1B;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+    font-family: "inter_regular";
 }
 
 #imgContainer {
     background-image: url(../../images/aboutus/aboutUs.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    /* border: 2px solid #9A0A1B; */
 
-    height: 75%;
-    width: 100%;
-
-    border: 2px solid black;
+    height: 70%;
+    width: 95%;
+    margin-top: 20px;
     border-radius: 5px;
 }
 
