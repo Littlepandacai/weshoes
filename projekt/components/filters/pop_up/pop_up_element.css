@@ -94,6 +94,7 @@ button {
     flex-direction: column;
     justify-content: right;
     align-items: baseline;
+    margin-top: 10px;
 }
 
 #kinds>h1 {
@@ -139,17 +140,34 @@ button {
 }
 
 .reviewDiv {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    margin-bottom: 15px; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(154, 10, 27, 0.85);
+
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 15px;
+
+    /* justify-content: center; */
 }
+
+#revText {
+    margin-left: 15px;
+}
+
 
 #reviews {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 
 #image {
@@ -196,6 +214,7 @@ button {
 #reviewsText>p {
     padding: 0;
     font-size: 14px;
+    /* margin-left: 15px; */
 }
 
 #boxBottomRight {
