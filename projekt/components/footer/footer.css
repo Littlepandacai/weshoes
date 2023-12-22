@@ -46,7 +46,7 @@ button:hover {
     align-items: center;
     flex-direction: column;
     position: relative;
-    font-family: "inter_regular";
+    font-family: "Inter_bold";
 }
 
 #imgContainer {
