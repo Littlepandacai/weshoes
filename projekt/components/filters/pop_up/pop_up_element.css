@@ -126,20 +126,23 @@ button {
 
 #reviewsText {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     background-color: #bbb9b9;
-    /* width: 50px; */
     width: 320px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 10px 20px 10px 20px;
     /* height: 150px; */
     height: 180px;
     grid-column: 1;
-    align-items: center;
-    justify-content: center;
     overflow-y: scroll;
 
     font-size: 10px;
+}
+
+.reviewDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 #reviews {
