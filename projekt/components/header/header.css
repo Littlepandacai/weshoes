@@ -116,12 +116,13 @@ header>#title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 85px;
 }
 
 header #title>#line {
     background-color: rgb(255, 255, 255);
     height: 5px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 #title {
