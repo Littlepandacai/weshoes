@@ -57,7 +57,7 @@ function renderPopUpElement(parent) {
                         </div>
                         <div id="boxBottomRight">
                             <div id="price">
-                                <h3>${rew_shoe_name.price}sek</h3>
+                                <h3>${rew_shoe_name.price} sek</h3>
                                 <button id="buy">BUY</button>
                             </div>
                         </div>

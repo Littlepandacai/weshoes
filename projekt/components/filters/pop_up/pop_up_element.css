@@ -239,6 +239,8 @@ button {
 
 #price>h3 {
     color: #9A0A1B;
+    white-space: nowrap;
+    margin-left: 20px;
 }
 
 #buy {
