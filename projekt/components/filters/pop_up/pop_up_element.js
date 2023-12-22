@@ -28,6 +28,8 @@ function renderPopUpElement(parent) {
                 return obj.id == rew_shoe_name.kind_id;
             })
 
+            let averageScore = 0;
+
             container.innerHTML = `
                 <div class="popup" id="popup">
                     <span class="close" id="closePopupBtn">&times;</span>
@@ -47,7 +49,7 @@ function renderPopUpElement(parent) {
                                 <div class="sizeType">42</div>
                             </div>
                             <div id="reviews">
-                            <p>Reviews</p>
+                            <p></p>
                             </div>
                         </div>
                         <div id="reviewsText">
@@ -78,6 +80,7 @@ function renderPopUpElement(parent) {
                 let reviewDiv = document.createElement("div");
                 reviewDiv.classList.add("reviewDiv");
                 revContainer.appendChild(reviewDiv);
+                averageScore += review.score;
 
                 reviewDiv.innerHTML = `
                             <h1 id="score">${review.score}/5</h1>
@@ -89,6 +92,9 @@ function renderPopUpElement(parent) {
                     revText.textContent = "No review text.";
                 }
             }
+
+            averageScore = Math.round(averageScore / reviewArray.length);
+            document.querySelector("#reviews > p").textContent = `${averageScore}/5`;
 
             let image_box = document.querySelector("#image");
             image_box.style.backgroundImage = shoe.style.backgroundImage
