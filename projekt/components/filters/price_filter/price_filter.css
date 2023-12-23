@@ -99,7 +99,7 @@ p {
 
 .price_checkmarks {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2px;
     margin-left: 15px;
 }
