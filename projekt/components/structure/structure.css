@@ -37,7 +37,6 @@ main {
 #rightBottom>#catalogueList>ol {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 2vw 2vw; */
 
     gap: 2vw 1vw;
     margin-left: 20px;
@@ -46,13 +45,6 @@ main {
 
 #rightBottom>#catalogueList>ol>div {
     width: 300px;
-
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-    /* border: 1px solid black;
-    /* background-color: white; */
-
 }
 
 #rightBottom>#catalogueList>ol>.catalogue>#shoeImg {
@@ -77,10 +69,6 @@ main {
     font-family: "inter_bold";
     margin-top: 8px;
 }
-
-/* #shoeBoxText>* {
-    color: black !important;
-} */
 
 .price {
     font-size: 22px;
