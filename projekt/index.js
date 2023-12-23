@@ -30,12 +30,3 @@ renderCatalogueList(rightBottom, SHOES);
 let main = document.querySelector("main");
 renderPopUpElement(main);
 renderFooter(structureContainers.footer);
-
-
-// Här ska resten av render_funktionerna anropas (listan av komponenter finns ovan).
-
-//funktion för att få sidebar att funka (om vi behöver en sidebar)
-// let sidebar_menu = document.querySelector("#menu");
-// sidebar_menu.addEventListener("click", function () {
-//     document.querySelector("#sidebar").classList.toggle("active")
-// })
