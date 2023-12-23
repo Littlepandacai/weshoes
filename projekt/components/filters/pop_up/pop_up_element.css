@@ -1,9 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* Footer styles */
 
 button {
     background-color: #7a7a7a;
@@ -21,7 +16,6 @@ button {
 }
 
 .popup {
-    /* display: none; */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -32,7 +26,6 @@ button {
     z-index: 100;
 
     width: 700px;
-    /* width: 500px; */
     height: 500px;
     padding: 20px;
     padding-top: 40px;
@@ -47,8 +40,6 @@ button {
     align-items: center;
 
     transition: opacity 0.3s ease-in-out;
-    /*pointer-events: none;*/
-
 }
 
 
@@ -62,18 +53,23 @@ button {
     flex-basis: 0;
 }
 
-/* .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-} */
+.popupBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 
 #closePopupBtn {
     position: absolute;
     top: 0;
-    /* left: 465px; */
     left: 650px;
     color: #9A0A1B;
     z-index: 100;
@@ -82,13 +78,11 @@ button {
 
 #popUpItems {
     display: grid;
-    /* grid-template-columns: 100px;
-    grid-template-rows: 100px; */
-
     grid-template-columns: 200px;
     grid-template-rows: 120px;
     gap: 150px;
 }
+
 
 #kinds {
     display: flex;
@@ -98,6 +92,7 @@ button {
     margin-top: 10px;
 }
 
+
 #kinds>h1 {
     font-size: 26px;
     font-family: "Inter_bold";
@@ -105,17 +100,20 @@ button {
     color: #9A0A1B;
 }
 
+
 #kinds>p {
     font-size: 16px;
     font-weight: bold;
     color: #9A0A1B;
 }
 
+
 #size {
     display: flex;
     justify-content: flex-start;
     margin-top: 30px;
 }
+
 
 .sizeType {
     background-color: #bbb9b9;
@@ -126,6 +124,7 @@ button {
     font-size: 14px;
     color: #9A0A1B;
 }
+
 
 #reviewsText {
     display: flex;
@@ -144,12 +143,6 @@ button {
 }
 
 .reviewDiv {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-bottom: 15px; */
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -158,9 +151,8 @@ button {
     margin-bottom: 15px;
     border-radius: 5px;
     padding: 15px;
-
-    /* justify-content: center; */
 }
+
 
 #revText {
     margin-left: 15px;
@@ -175,6 +167,7 @@ button {
     color: #9A0A1B;
 }
 
+
 #image {
     display: grid;
     background-color: #bbb9b9;
@@ -184,8 +177,8 @@ button {
     border-radius: 5px;
     background-position: center;
     background-size: contain;
-    /* margin-right: 60px; */
 }
+
 
 #boxTopRight {
     display: flex;
@@ -195,9 +188,11 @@ button {
     margin-top: 10px;
 }
 
+
 #boxTopLeft {
     margin-left: 5px;
 }
+
 
 #price {
     display: flex;
@@ -244,20 +239,5 @@ button {
 }
 
 #buy {
-    /* margin-left: 40px; */
     border-radius: 20px;
-
-}
-
-.popupBackground {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.2);
 }

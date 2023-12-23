@@ -18,11 +18,13 @@ main {
     width: 35%;
     margin: 15px;
     margin-left: 25px;
+    margin-top: 40px;
 }
 
 #right {
     width: 65%;
     margin-right: 30px;
+    margin-top: 25px;
 
     display: flex;
     flex-direction: column;

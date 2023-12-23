@@ -26,10 +26,6 @@
 
 * {
     box-sizing: border-box;
-    color: #ffffff;
-}
-
-body {
+    padding: 0;
     margin: 0;
-
 }

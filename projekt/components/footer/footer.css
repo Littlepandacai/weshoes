@@ -7,9 +7,9 @@ footer {
 
 button {
     color: #9A0A1B;
-    background-color: #bbb9b9;
+    /* background-color: #bbb9b9; */
+    background-color: rgba(232, 232, 232, 0.98);
 
-    /* height: 7vh; */
     width: 20vw;
     font-size: 20px;
     transition: all 200ms;
@@ -35,9 +35,10 @@ button:hover {
 }
 
 #infoBox {
-    height: 80vh;
-    width: 50vw;
-    background-color: #bbb9b9;
+    height: 60vh;
+    width: 70vw;
+    /* background-color: #bbb9b9; */
+    background-color: rgba(232, 232, 232, 0.98);
     border-radius: 5px;
     color: #9A0A1B;
 
@@ -51,15 +52,15 @@ button:hover {
 
 #imgContainer {
     background-image: url(../../images/aboutus/aboutUs.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* border: 2px solid #9A0A1B; */
+    border: 2px solid #9A0A1B;
 
     height: 70%;
-    width: 95%;
+    width: 77%;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .exitButton {
@@ -69,7 +70,5 @@ button:hover {
     position: absolute;
     top: 10px;
     right: 10px;
-
     border-radius: 50%;
-
 }
