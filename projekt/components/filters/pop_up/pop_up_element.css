@@ -47,7 +47,6 @@ button {
     align-items: center;
 
     transition: opacity 0.3s ease-in-out;
-    cursor: pointer;
     /*pointer-events: none;*/
 
 }
@@ -78,6 +77,7 @@ button {
     left: 650px;
     color: #9A0A1B;
     z-index: 100;
+    cursor: pointer;
 }
 
 #popUpItems {
