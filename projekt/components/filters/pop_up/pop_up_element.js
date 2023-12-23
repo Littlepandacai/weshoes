@@ -16,16 +16,16 @@ function renderPopUpElement(parent) {
             overlay.appendChild(container);
 
 
-            let rew_shoe_name = array_find(SHOES, function (obj) {
+            let rewShoeName = arrayFind(SHOES, function (obj) {
                 return obj.id == shoe.id;
             })
 
-            let rew_shoe_country = array_find(COUNTRIES, function (obj) {
-                return obj.id == rew_shoe_name.country_id;
+            let rewShoeCountry = arrayFind(COUNTRIES, function (obj) {
+                return obj.id == rewShoeName.country_id;
             })
 
-            let rew_shoe_kind = array_find(KINDS, function (obj) {
-                return obj.id == rew_shoe_name.kind_id;
+            let rewShoeKind = arrayFind(KINDS, function (obj) {
+                return obj.id == rewShoeName.kind_id;
             })
 
             let averageScore = 0;
@@ -36,9 +36,9 @@ function renderPopUpElement(parent) {
                     <div id="popUpItems">
                         <div id="boxTopLeft">
                             <div id="kinds">
-                                <h1>${rew_shoe_name.name}</h1>
-                                <p>${rew_shoe_country.name}</p>
-                                <p>${rew_shoe_kind.name}</p>
+                                <h1>${rewShoeName.name}</h1>
+                                <p>${rewShoeCountry.name}</p>
+                                <p>${rewShoeKind.name}</p>
                             </div>
                             <div id="size">
                                 <div class="sizeType">37</div>
@@ -59,7 +59,7 @@ function renderPopUpElement(parent) {
                         </div>
                         <div id="boxBottomRight">
                             <div id="price">
-                                <h3>${rew_shoe_name.price} sek</h3>
+                                <h3>${rewShoeName.price} sek</h3>
                                 <button id="buy">BUY</button>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ function renderPopUpElement(parent) {
 
 
             let shoeId = Number(shoe.getAttribute("id"));
-            let reviewArray = array_filter(REVIEWS, function (product) {
+            let reviewArray = arrayFilter(REVIEWS, function (product) {
                 return product.shoe_id === shoeId
             });
 

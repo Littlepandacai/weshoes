@@ -78,7 +78,7 @@ p {
 
 /* Chekmark CSS */
 
-#price_filter {
+#priceFilter {
     background-color: #9A0A1B;
     border: black 1px solid;
     font-family: "Inter_regular";
@@ -87,24 +87,24 @@ p {
     margin-top: 5px;
 }
 
-#price_filter>h3 {
+#priceFilter>h3 {
     font-family: "Inter_bold";
     margin: 20px;
 }
 
-.price_container h3 {
+.priceContainer h3 {
     font-size: 20px;
     font-family: "Inter";
 }
 
-.price_checkmarks {
+.priceCheckmarks {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2px;
     margin-left: 15px;
 }
 
-.checkmark_box {
+.checkmarkBox {
     background-color: white;
 }
 

@@ -1,5 +1,5 @@
 let body = document.querySelector("body");
-render_carousel(body);
+renderCarousel(body);
 
 let button = document.querySelector("#circle");
 button.innerHTML = `

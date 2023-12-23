@@ -20,7 +20,7 @@ function catalogue () {
   };
 }
 
-function render_catalogueObject(){
+function renderCatalogueObject(){
 
   const container = document.querySelectorAll(".catalogueObject");
   container.innerHTML = `

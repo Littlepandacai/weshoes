@@ -1,6 +1,6 @@
 function renderKindFilter (parent) {
     const container = document.createElement("div");
-    container.id = "kind_filter";
+    container.id = "kindFilter";
     parent.append(container);
   
     container.innerHTML = `
@@ -9,10 +9,10 @@ function renderKindFilter (parent) {
   
     for (kind of KINDS)
     {
-      const kinds_checkmarks = document.createElement("div");
-      container.append(kinds_checkmarks);
-      kinds_checkmarks.classList.add("kind_checkmarks");
+      const kindsCheckmarks = document.createElement("div");
+      container.append(kindsCheckmarks);
+      kindsCheckmarks.classList.add("kindCheckmarks");
   
-      renderFilterElements(kinds_checkmarks, kind.name);
+      renderFilterElements(kindsCheckmarks, kind.name);
     }
   }

@@ -1,4 +1,4 @@
-#country_filter {
+#countryFilter {
   background-color: #9A0A1B;
   border: black 1px solid;
   border-radius: 5px;
@@ -6,23 +6,23 @@
   font-family: "inter_regular";
 }
 
-#country_filter>h3 {
+#countryFilter>h3 {
   font-family: "Inter_bold";
   margin: 20px;
 }
 
-.country_container>h3 {
+.countryContainer>h3 {
   font-size: 20px;
   color: white;
 }
 
-.country_checkmarks {
+.countryCheckmarks {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2px;
   margin-left: 15px;
 }
 
-.checkmark_box {
+.checkmarkBox {
   background-color: white;
 }
