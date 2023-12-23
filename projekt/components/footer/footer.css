@@ -51,8 +51,9 @@ button:hover {
 
 #imgContainer {
     background-image: url(../../images/aboutus/aboutUs.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     /* border: 2px solid #9A0A1B; */
 
     height: 70%;
