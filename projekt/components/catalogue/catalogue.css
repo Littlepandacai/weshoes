@@ -48,7 +48,7 @@
     font-family: jaldi_regular;
 }
 
-.shoe-img {
+.shoeImg {
     height: 300px;
     background-position: center;
     background-size: cover;
@@ -62,7 +62,7 @@
     transition: all 0.500s ease-in-out;
 } */
 
-.shoe-img:hover {
+.shoeImg:hover {
     cursor: pointer;
     border: 2px solid #9A0A1B;
     /* transform: scale(1.1);

@@ -46,7 +46,7 @@ let amount_div = document.createElement("div")
 
 function renderPriceFilter(parent) {
   const container = document.createElement("div");
-  container.id = "price_filter";
+  container.id = "priceFilter";
   parent.append(container);
 
   container.innerHTML = `
@@ -60,7 +60,7 @@ function renderPriceFilter(parent) {
   for (const price of priceRanges) {
     const priceCheckmarks = document.createElement("div");
     container.append(priceCheckmarks);
-    priceCheckmarks.classList.add("price_checkmarks");
+    priceCheckmarks.classList.add("priceCheckmarks");
 
     renderFilterElements(priceCheckmarks, price);
   }

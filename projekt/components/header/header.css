@@ -68,7 +68,7 @@
     margin-left: 5px;
 }*/
 
-#nav_right {
+#navRight {
     display: flex;
     flex-grow: 1;
     flex-basis: 50px;
@@ -98,7 +98,7 @@ header {
     padding-top: 20px;
 }
 
-header>#header_left {
+header>#headerLeft {
     flex-basis: 20%;
 }
 

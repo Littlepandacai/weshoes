@@ -18,8 +18,8 @@ const structureContainers = renderStructure(body);
 
 //  OBS!!! inte den korrekta renderingen, måste korrigeras innan!!
 
-render_header(body);
-render_nav(body);
+renderHeader(body);
+renderNav(body);
 renderCountryFilter(left);
 renderKindFilter(left);
 renderPriceFilter(left);

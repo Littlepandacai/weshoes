@@ -7,12 +7,12 @@ function renderCatalogue(parent, shoes) {
     container.id = shoes[i].id;
     parent.append(container);
 
-    const country = array_find(COUNTRIES, (x) => x.id === shoes[i].country_id);
-    const type = array_find(KINDS, (x) => x.id === shoes[i].kind_id);
-    const price = array_find(SHOES, (x) => x.price === shoes[i].price)
+    const country = arrayFind(COUNTRIES, (x) => x.id === shoes[i].country_id);
+    const type = arrayFind(KINDS, (x) => x.id === shoes[i].kind_id);
+    const price = arrayFind(SHOES, (x) => x.price === shoes[i].price)
 
     container.innerHTML = `
-        <div class="shoe-img" id="${shoes[i].id}"></div>
+        <div class="shoeImg" id="${shoes[i].id}"></div>
         <div id="shoeBoxText">
           <h1>${shoes[i].name}</h1>
           <div class="country">${country.name}</div>
@@ -21,9 +21,9 @@ function renderCatalogue(parent, shoes) {
         </div>
       `;
 
-    const image_path = shoes[i].file_name;
-    const shoeImg = container.querySelector(".shoe-img");
-    shoeImg.style.backgroundImage = `url(./images/skobilder/${image_path})`;
+    const imagePath = shoes[i].file_name;
+    const shoeImg = container.querySelector(".shoeImg");
+    shoeImg.style.backgroundImage = `url(./images/skobilder/${imagePath})`;
 
   }
 }

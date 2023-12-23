@@ -28,11 +28,11 @@ main {
     flex-direction: column;
 }
 
-#catalogue_list {
+#catalogueList {
     margin-top: 18px;
 }
 
-#rightBottom>#catalogue_list>ol {
+#rightBottom>#catalogueList>ol {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* gap: 2vw 2vw; */
@@ -42,7 +42,7 @@ main {
 
 }
 
-#rightBottom>#catalogue_list>ol>div {
+#rightBottom>#catalogueList>ol>div {
     width: 300px;
 
     /* background-size: cover;
@@ -53,7 +53,7 @@ main {
 
 }
 
-#rightBottom>#catalogue_list>ol>.catalogue>#shoe-img {
+#rightBottom>#catalogueList>ol>.catalogue>#shoeImg {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

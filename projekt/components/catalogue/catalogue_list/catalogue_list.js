@@ -2,7 +2,7 @@
 
 function renderCatalogueList(parent, catalogue) {
   const container = document.createElement("div");
-  container.id = "catalogue_list";
+  container.id = "catalogueList";
   parent.append(container);
 
   container.innerHTML = `
@@ -14,27 +14,24 @@ function renderCatalogueList(parent, catalogue) {
 }
 
 function updateCatalogueList() {
-  const container = document.querySelector("#catalogue_list");
-  const list_dom = container.querySelector("ol");
-  const feedback_dom = container.querySelector(".feedback");
+  const container = document.querySelector("#catalogueList");
+  const listDom = container.querySelector("ol");
+  const feedbackDom = container.querySelector(".feedback");
 
-  const catalogue = filter_shoes();
+  const catalogue = filterShoes();
 
-  list_dom.innerHTML = "";
-  feedback_dom.style.display = "block";
+  listDom.innerHTML = "";
+  feedbackDom.style.display = "block";
 
   if (catalogue === undefined) {
-    feedback_dom.textContent = "Show shoes by selecting from the filters";
+    feedbackDom.textContent = "Show shoes by selecting from the filters";
   }
   else if (catalogue.length === 0) {
-    feedback_dom.textContent = "No shoes for this combination of filters";
+    feedbackDom.textContent = "No shoes for this combination of filters";
   }
   else {
-    feedback_dom.style.display = "none";
+    feedbackDom.style.display = "none";
 
-    renderCatalogue(list_dom, catalogue);
-
-
-    //sort_programme_list();
+    renderCatalogue(listDom, catalogue);
   }
 }

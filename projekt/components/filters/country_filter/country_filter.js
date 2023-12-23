@@ -1,6 +1,6 @@
 function renderCountryFilter (parent) {
   const container = document.createElement("div");
-  container.id = "country_filter";
+  container.id = "countryFilter";
   parent.append(container);
 
   container.innerHTML = `
@@ -9,11 +9,11 @@ function renderCountryFilter (parent) {
 
   for (country of COUNTRIES)
   {
-    const country_checkmarks = document.createElement("div");
-    container.append(country_checkmarks);
-    country_checkmarks.classList.add("country_checkmarks");
+    const countryCheckmarks = document.createElement("div");
+    container.append(countryCheckmarks);
+    countryCheckmarks.classList.add("countryCheckmarks");
 
-    renderFilterElements(country_checkmarks, country.name);
+    renderFilterElements(countryCheckmarks, country.name);
    
   }
 }
