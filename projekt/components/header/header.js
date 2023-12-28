@@ -15,6 +15,7 @@ function renderNav() {
         </div>
         <h1>WeShoes</h1>
         <div id="navRight">
+            <div id="searchBarIcon"></div>
             <input type="search" id="searchBar"></input>
             <div id="shoppingCart"></div>
         </div>
@@ -27,6 +28,7 @@ function renderNav() {
         menu: container.querySelector("#menu"),
         logo: container.querySelector("h1"),
         right: container.querySelector("#right"),
+        searchBarIcon: container.querySelector("#searchBarIcon"),
         searchBar: container.querySelector("#searchBar"),
         shoppingCart: container.querySelector("#shoppingCart"),
     }

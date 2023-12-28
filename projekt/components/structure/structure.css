@@ -11,7 +11,7 @@ nav {
 main {
     display: flex;
     background-color: #55000A;
-    padding-top: 60px;
+    padding: 50px 0;
 }
 
 #left {

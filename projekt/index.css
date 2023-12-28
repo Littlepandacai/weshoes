@@ -28,4 +28,13 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-size: 30px;
+    line-height: 1.6;
+    color: #ffffff;
+    overflow-x: hidden;
 }

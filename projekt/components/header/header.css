@@ -32,7 +32,7 @@
     font-family: cavas_nera;
     font-size: 4vw;
     margin: 0;
-    margin-top: 7px;
+    margin-top: 15px;
     color: white;
 }
 
@@ -127,4 +127,12 @@ header #title>#line {
 
 #title {
     margin-top: 60px;
+}
+
+#searchBarIcon {
+    background-image: url(../../images/icons/magnifying-glass.svg);
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
 }
