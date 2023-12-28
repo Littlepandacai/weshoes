@@ -84,13 +84,13 @@ function renderPopUpElement(parent) {
 
                 reviewDiv.innerHTML = `
                             <h1 id="score">${review.score}/5</h1>
-                            <p id="revText">${review.rev}</p>      
+                            <p id="revText">${review.rev || "No review text."}</p>      
                         `;
 
-                if (review.rev === "") {
+                /*if (review.rev === "") {
                     let revText = document.querySelector("#revText");
                     revText.textContent = "No review text.";
-                }
+                }*/
             }
 
             averageScore = Math.round(averageScore / reviewArray.length);
