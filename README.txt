@@ -30,7 +30,7 @@
  		# weshoes
 
 	  	Länk till appen på webben:
-
+		http://www.maumt.se/wdu/ht23/students/Bojana/weshoes/projekt/
 
 	 	Länk till projektets Github-repo:
 	  	https://github.com/Littlepandacai/weshoes
